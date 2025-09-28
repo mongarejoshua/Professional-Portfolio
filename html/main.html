@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>techwithjosh.dev</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../scss/custom.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/popup.css">
+</head>
+
+<body class="container-xxl bg-white">
+    <!-- navbar components -->
+    <nav class="navbar navbar-expand-lg container-xxl bg-body-tertiary shadow-md fixed-top mt-2 mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-secondary" href="#"><img class="img-fluid" src="../images/logo1.png"
+                    alt="my brand logo"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section/Home section -->
+    <section id="home" class="row bg-light text-dark text-center p-5">
+        <div class="col-md-7 container-xl mt-5">
+            <p class=" fw-light text-md-start">WELCOME TO TECHWITHJOSH PORTFOLIO</p>
+            <h2 class="fw-bold fs-1 text-info text-md-start">I'm Mongare Joshua</h2>
+            <ul class="list-inline text-md-start">
+                <li class="list-inline-item fs-4 fw-semibold">Electrical Engineer</li>|
+                <li class="list-inline-item fs-4 fw-semibold">Telecommunications Professional</li>|
+                <li class="list-inline-item fs-4 fw-semibold">Frontend Web Developer</li>
+            </ul>
+
+            <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto magnam temporibus quo
+                nisi ab, voluptas autem aperiam culpa eos beatae perspiciatis! Nam sit reiciendis autem magnam natus
+                itaque sapiente ipsa.
+                Similique nesciunt eveniet, sapiente quos officiis perferendis dolorem itaque doloribus aperiam ex enim
+                natus! Ipsa, atque modi architecto vero nulla veritatis blanditiis ipsam, voluptatibus iste accusamus
+                cupiditate reprehenderit illum vel.</p>
+
+            <div class="w-100 d-flex justify-content-start gap-2 mt-5">
+                <button class="btn btn-primary">View My Work</button>
+                <button id="button" class="btn btn-outline-primary">Download CV</button>
+            </div>
+
+            <div class="container p-2 mt-5">
+                <a href="www.github.com">
+                    <box-icon class="icons" type='logo' name='github' color="var(--github)"></box-icon>
+                </a>
+                <a href="">
+                    <box-icon class="icons" name='stack-overflow' type='logo' color="var(--stack)"></box-icon>
+                </a>
+                <a href="">
+                    <box-icon class="icons" name='linkedin-square' type='logo' color="var(--linkedin)"></box-icon>
+                </a>
+                <a href="">
+                    <box-icon class="icons" name='instagram' type='logo' color="var(--instagram)"></box-icon>
+                </a>
+                <a href="">
+                    <box-icon class="icons" name='twitter' type='logo' color="var(--twitter)"></box-icon>
+                </a>
+                <a href="">
+                    <box-icon class="icons" name='whatsapp' type='logo' color="var(--whatsapp)"></box-icon>
+                </a>
+                <a href="">
+                    <box-icon class="icons" name='facebook' type='logo' color="var(--facebook)"></box-icon>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-5 container ms-auto">
+            <img class="img-fluid ratio-21x9" src="../images/hero.png" alt="my hero image">
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="p-3 p-md-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6 text-center">
+                    <img src="../images/hero.png" class="img-fluid rounded" alt="Profile">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Me</h2>
+                    <p>
+                        I’m a passionate frontend web developer with a focus on creating clean, efficient, and
+                        scalable solutions.
+                        With a strong background in both design and engineering, I thrive at the intersection of
+                        creativity
+                        and technology.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-primary w-100 w-md-auto">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="bg-light p-3 p-md-5">
+        <div class="container">
+            <h2 class="text-center mb-4">My Projects</h2>
+            <div class="row g-4">
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <a href="../completed-projects/Frontend-Development-Projects/Documentation-Page/main.html" class="link-info text-decoration-none">
+                            <img src="../images/project1.jpg" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Documentation Page</h5>
+                                <p class="card-text">A web app built with modern tools showcasing dynamic UI.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <a href="" class="link-info text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../images/project2.jpg" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Two</h5>
+                                <p class="card-text">Data science project analyzing trends and generating insights.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <a href="" class="link-info text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../images/project4.jpg" class="card-img-top" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Three</h5>
+                                <p class="card-text">Machine learning model for intelligent recommendations.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a href="" class="link-info text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../images/project4.jpg" class="card-img-top" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Three</h5>
+                                <p class="card-text">Machine learning model for intelligent recommendations.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a href="" class="link-info text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../images/project4.jpg" class="card-img-top" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Three</h5>
+                                <p class="card-text">Machine learning model for intelligent recommendations.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a href="" class="link-info text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../images/project4.jpg" class="card-img-top" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Three</h5>
+                                <p class="card-text">Machine learning model for intelligent recommendations.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a href="" class="link-info text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../images/project4.jpg" class="card-img-top" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Three</h5>
+                                <p class="card-text">Machine learning model for intelligent recommendations.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a href="" class="link-info text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../images/project4.jpg" class="card-img-top" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Three</h5>
+                                <p class="card-text">Machine learning model for intelligent recommendations.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a href="" class="link-info text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../images/project4.jpg" class="card-img-top" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Three</h5>
+                                <p class="card-text">Machine learning model for intelligent recommendations.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="p-3 p-md-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Services</h2>
+            <div class="row g-4">
+
+                <div class="col-sm-12 col-md-4 text-center shadow-sm">
+                    <i class="bi bi-code-slash display-4 text-primary"></i>
+                    <h5 class="mt-3">Frontend Web Development</h5>
+                    <p>Custom website UI and applications tailored to your needs.</p>
+                </div>
+
+                <div class="col-sm-12 col-md-4 text-center shadow-sm">
+                    <i class="bi bi-lightbulb display-4 text-primary"></i>
+                    <h5 class="mt-3">Telecommunication Services</h5>
+                    <p>Creating and maintaining network and communication systems.</p>
+                </div>
+
+                <div class="col-sm-12 col-md-4 text-center shadow-sm">
+                    <i class="bi bi-lightbulb display-4 text-primary"></i>
+                    <h5 class="mt-3">Electrical Installation Services</h5>
+                    <p>Installation and inspection of domestic and industrial electrical systems, machines and devices.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="bg-light p-3 p-md-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Latest Blog Posts</h2>
+            <div class="row g-4">
+                <div class="col-sm-12 col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Docker Container</h5>
+                            <p class="card-text">A Beginner's Guide to Setting Up Your First Docker Container</p>
+                            <a href="#" class="btn btn-link link-info">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Nature Exploration</h5>
+                            <p class="card-text">The Ultimate 3-Day Itinerary for Exploring Karura Forest Reserves.</p>
+                            <a href="#" class="btn btn-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Product Review & Comparison</h5>
+                            <p class="card-text">Windows vs Linux: Which is the Better for Developers?</p>
+                            <a href="#" class="btn btn-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="p-3 p-md-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-6">
+
+                    <form id="contact" action="https://formspree.io/f/xgvnoybw" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+                    </form>
+
+                    <div id="loader"></div>
+
+                    <div class="my-modal" id="customModal">
+                        <div class="modal-window">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-secondary-emphasis">Submission Status</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-info">Message has been received successfully!</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="close-trigger btn btn-primary">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p class="mb-0">&copy; 2025 TechWithJosh. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/contact.js"></script>
+    <script src="../scripts/cv.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+
+</html>
