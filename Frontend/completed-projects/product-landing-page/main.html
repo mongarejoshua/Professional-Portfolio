@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="sticky-top bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- <img id="header-img" src="logo1.jpg" alt="logo" class="me-2"> -->
+                <span class="fw-bold">Your Product</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar"
+                aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navBar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#video-section">Video</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="container my-5">
+
+        <!-- Hero / Intro -->
+        <section class="text-center mb-5">
+            <h1 class="display-6">Awesome Product</h1>
+            <p class="lead text-muted">Discover the amazing features of our product — built to help you do more.</p>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="mb-5">
+            <h2 class="h4 mb-3">Awesome Features</h2>
+            <div class="row g-3">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Fast</h5>
+                            <p class="card-text">Optimized performance so you get things done quickly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Reliable</h5>
+                            <p class="card-text">Built with stability and reliability in mind.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Secure</h5>
+                            <p class="card-text">Security features that protect your data and privacy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video-section" class="mb-5">
+            <h2 class="h4 mb-3">Product Video</h2>
+            <div class="ratio ratio-16x9">
+                <!-- If you have a local file, use <video> tag. For iframe/embed (YouTube) replace src accordingly -->
+                <iframe id="video" src="video.mp4" title="Product video" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Contact / Email Form -->
+        <section id="contact" class="mb-5">
+            <h2 class="h4 mb-3">Contact Us</h2>
+
+            <form action="https://www.freecodecamp.com/email-submit" id="form" class="row g-3">
+                <div class="col-12 col-md-8">
+                    <label for="email" class="form-label visually-hidden">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
+                        required>
+                </div>
+
+                <div class="col-12 col-md-4 d-grid">
+                    <button type="submit" class="btn btn-secondary">Submit</button>
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-light py-3 mt-auto">
+        <div class="container text-center small text-muted">&copy; <span id="year"></span> Your Company — All rights
+            reserved.</div>
+    </footer>
+
+    <!-- Bootstrap JS (Popper included) -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

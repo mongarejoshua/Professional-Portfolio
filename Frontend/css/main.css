@@ -1,0 +1,79 @@
+:root {
+    /* icon colors */
+    --github: #24292E;
+    --linkedin: #0A66C2;
+    --stack: #F48024;
+    --twitter: #1DA1F2;
+    --whatsapp: #25D366;
+    --facebook: #1877F2;
+    --instagram: radial-gradient(circle at 30% 107%, #FDF497 0%, #FD5949 45%, #D6249F 60%, #285AEB 90%);
+    --discord: #5865F2;
+}
+/* Alan Sans */
+@font-face {
+    font-family: 'Alan Sans';
+    src: url('../assets/fonts/Alan_Sans/static/AlanSans-Regula') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Alan Sans';
+    src: url('../assets/fonts/Alan_Sans/static/AlanSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* === Fira Sans === */
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../assets/fonts/Fira_Sans/FiraSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../assets/fonts/Fira_Sans/FiraSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: "Fira Sans";
+}
+.fw-bold {
+    font-family: "Alan Sans";
+    font-weight: 700;
+    font-style: normal;
+}
+
+.nav-item {
+    font-family: "Fira sans";
+    font-weight: bolder;
+}
+.icons {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+.container a {
+    text-decoration: none;
+}
+.img-fluid {
+    width: 200px;
+}
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.01);
+}
+.glass-card {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px) saturate(150%);
+    -webkit-backdrop-filter: blur(15px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+}

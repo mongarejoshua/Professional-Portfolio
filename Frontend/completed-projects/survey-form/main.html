@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multimedia University Survey Form</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+    <div class="container py-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h1 class="text-center mb-3">Multimedia University Survey Form</h1>
+                <p class="text-center text-muted">Riding on Technology Inspiring Innovation</p>
+
+                <form id="survey-form">
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="forexample@gmail.com">
+                    </div>
+
+                    <!-- Age -->
+                    <div class="mb-3">
+                        <label for="number" class="form-label">Age</label>
+                        <input type="number" id="number" class="form-control" min="10" max="100"
+                            placeholder="Enter your age">
+                    </div>
+
+                    <!-- Role -->
+                    <div class="mb-3">
+                        <label for="role" class="form-label">Select your current role</label>
+                        <select id="role" class="form-select">
+                            <option selected disabled>Select your current role</option>
+                            <option value="student">Student</option>
+                            <option value="job">Full time job</option>
+                            <option value="na">Prefer not to say</option>
+                        </select>
+                    </div>
+
+                    <!-- Recommend -->
+                    <fieldset class="mb-3">
+                        <legend class="col-form-label pt-0">Would you recommend Multimedia University to your Friend?
+                        </legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="choice" id="yes" checked>
+                            <label class="form-check-label" for="yes">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="choice" id="no">
+                            <label class="form-check-label" for="no">No</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="choice" id="maybe">
+                            <label class="form-check-label" for="maybe">Maybe</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Favorite Game -->
+                    <div class="mb-3">
+                        <label for="game" class="form-label">Select your favorite game</label>
+                        <select id="game" class="form-select">
+                            <option selected disabled>Select an option</option>
+                            <option>Basketball</option>
+                            <option>Football</option>
+                            <option>Rugby</option>
+                            <option>Tennis</option>
+                        </select>
+                    </div>
+
+                    <!-- Improvements -->
+                    <fieldset class="mb-3">
+                        <legend class="col-form-label pt-0">What would you like to be improved</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="games">
+                            <label class="form-check-label" for="games">Games and Sports</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="accommodation">
+                            <label class="form-check-label" for="accommodation">Accommodation Services</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="library">
+                            <label class="form-check-label" for="library">Library Services</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="environment">
+                            <label class="form-check-label" for="environment">Environment</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Comments -->
+                    <div class="mb-3">
+                        <label for="comments" class="form-label">Comments and Suggestions</label>
+                        <textarea id="comments" class="form-control" rows="4"
+                            placeholder="Type your comments here"></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit" class="btn btn-secondary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

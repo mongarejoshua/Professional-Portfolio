@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-xl d-flex justify-content-center align-items-center vh-100">
+        <form id="authForm" class="w-60 p-4 border border-2 rounded">
+            <h2 id="formTitle" class="mb-4 text-center">Login</h2>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control w-70" id="username" placeholder="Enter your username">
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+
+            <button id="submit" type="submit" class="btn btn-secondary w-100">Login</button>
+
+            <div class="mt-3 text-center flex justify-content-between">
+                <a href="#" id="toggleLink" class="link-primary text-decoration-none">Don't have an account</a>
+                <a href="" class="link-secondary">Sign Up</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
