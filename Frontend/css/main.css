@@ -77,3 +77,13 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
 }
+#home {
+    background: url(../assets/images/hero-bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+
+}
+#home .back {
+    background: rgba(0, 0, 0, 0.9);
+}
