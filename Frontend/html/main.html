@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="../assets/images/fav.jpg" type="image/x-icon">
 
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="../scss/custom.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -91,7 +92,7 @@
         <div class="container">
             <div class="row align-items-center g-4">
                 <div class="col-md-6 text-center">
-                    <img src="../images/hero.png" class="img-fluid rounded" alt="Profile">
+                    <img src="../assets/images/hero.png" class="img-fluid rounded" alt="Profile">
                 </div>
                 <div class="col-md-6">
                     <h2 class="fw-bold text-center text-info">About Me</h2>
@@ -116,242 +117,396 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="bg-light p-3 p-md-5">
+    <section id="projects" class="p-2 bg-white">
         <div class="container">
-            <h2 class="fw-bold text-center text-info mb-4">My Projects</h2>
-            <div class="row g-4">
+            <h2 class="text-center fw-bold text-info mb-4">My Engineering Projects</h2>
+            <p class="text-center text-muted mb-5">
+                A showcase of hands-on electrical, telecommunications, automation, and web-based innovations that
+                demonstrate my technical range and engineering creativity.
+            </p>
 
+            <div class="row g-2">
+
+                <!-- Electrical Systems -->
                 <div class="col-sm-12 col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <a href="../completed-projects/Frontend-Development-Projects/Documentation-Page/main.html"
-                            class="link-info text-decoration-none">
-                            <img src="../images/project1.jpg" class="card-img-top" alt="Project 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Documentation Page</h5>
-                                <p class="card-text">A web app built with modern tools showcasing dynamic UI.</p>
-                            </div>
-                        </a>
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="../assets/images/e-project1.png" class="card-img-top" alt="Domestic Wiring System">
+                        <div class="card-body">
+                            <h5 class="card-title text-info fw-semibold">Domestic Electrical Wiring System</h5>
+                            <p class="card-text text-muted">
+                                Designed and implemented a safe residential wiring layout with load balancing,
+                                protection
+                                circuits, and energy efficiency in mind.
+                            </p>
+                            <p><strong>Tools:</strong> AutoCAD Electrical, Proteus, Multisim</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">View Project</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-sm-12 col-md-4">
-                    <a href="" class="link-info text-decoration-none">
-                        <div class="card h-100 shadow-sm">
-                            <img src="../images/project2.jpg" class="card-img-top" alt="Project 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Project Two</h5>
-                                <p class="card-text">Data science project analyzing trends and generating insights.</p>
-                            </div>
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="../assets/images/e-project2.jpeg" class="card-img-top" alt="Solar Power System">
+                        <div class="card-body">
+                            <h5 class="card-title text-info fw-semibold">Solar Power & Energy System</h5>
+                            <p class="card-text text-muted">
+                                Designed and simulated a hybrid solar PV system with inverter integration for
+                                sustainable
+                                and reliable power generation.
+                            </p>
+                            <p><strong>Tools:</strong> MATLAB, Simulink, PVsyst</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">View Project</a>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="col-sm-12 col-md-4">
-                    <a href="" class="link-info text-decoration-none">
-                        <div class="card h-100 shadow-sm">
-                            <img src="../images/project4.jpg" class="card-img-top" alt="Project 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Project Three</h5>
-                                <p class="card-text">Machine learning model for intelligent recommendations.</p>
-                            </div>
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/power-monitoring.jpg" class="card-img-top" alt="Energy Monitoring System">
+                        <div class="card-body">
+                            <h5 class="card-title text-info fw-semibold">Energy Monitoring & Metering System</h5>
+                            <p class="card-text text-muted">
+                                Developed a real-time monitoring system that tracks voltage, current, and power
+                                consumption
+                                using sensors and microcontrollers.
+                            </p>
+                            <p><strong>Tools:</strong> Arduino, ESP8266, IoT Dashboard</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">View Project</a>
                         </div>
-                    </a>
+                    </div>
                 </div>
+
+                <!-- Telecommunication & Networking -->
                 <div class="col-sm-12 col-md-4">
-                    <a href="" class="link-info text-decoration-none">
-                        <div class="card h-100 shadow-sm">
-                            <img src="../images/project4.jpg" class="card-img-top" alt="Project 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Project Three</h5>
-                                <p class="card-text">Machine learning model for intelligent recommendations.</p>
-                            </div>
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/network-design.jpg" class="card-img-top" alt="Network Design Project">
+                        <div class="card-body">
+                            <h5 class="card-title text-info fw-semibold">LAN & Network Design</h5>
+                            <p class="card-text text-muted">
+                                Designed a campus-wide network infrastructure with proper subnetting, routing, and
+                                switch
+                                configurations for reliable communication.
+                            </p>
+                            <p><strong>Tools:</strong> Cisco Packet Tracer, GNS3</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">View Project</a>
                         </div>
-                    </a>
+                    </div>
                 </div>
+
                 <div class="col-sm-12 col-md-4">
-                    <a href="" class="link-info text-decoration-none">
-                        <div class="card h-100 shadow-sm">
-                            <img src="../images/project4.jpg" class="card-img-top" alt="Project 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Project Three</h5>
-                                <p class="card-text">Machine learning model for intelligent recommendations.</p>
-                            </div>
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/antenna-design.jpg" class="card-img-top" alt="Antenna Design">
+                        <div class="card-body">
+                            <h5 class="card-title text-info fw-semibold">Microstrip Antenna Design</h5>
+                            <p class="card-text text-muted">
+                                Simulated and optimized a patch antenna for 2.4GHz communication to improve gain and
+                                radiation efficiency.
+                            </p>
+                            <p><strong>Tools:</strong> CST Studio, HFSS</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">View Project</a>
                         </div>
-                    </a>
+                    </div>
                 </div>
+
                 <div class="col-sm-12 col-md-4">
-                    <a href="" class="link-info text-decoration-none">
-                        <div class="card h-100 shadow-sm">
-                            <img src="../images/project4.jpg" class="card-img-top" alt="Project 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Project Three</h5>
-                                <p class="card-text">Machine learning model for intelligent recommendations.</p>
-                            </div>
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/wireless-communication.jpg" class="card-img-top"
+                            alt="Wireless System Simulation">
+                        <div class="card-body">
+                            <h5 class="card-title text-info fw-semibold">Wireless Communication System Simulation</h5>
+                            <p class="card-text text-muted">
+                                Modeled GSM and Wi-Fi channel propagation to analyze signal strength and data
+                                throughput.
+                            </p>
+                            <p><strong>Tools:</strong> MATLAB, GNU Radio</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">View Project</a>
                         </div>
-                    </a>
+                    </div>
                 </div>
+
+                <!-- Automation & Control -->
                 <div class="col-sm-12 col-md-4">
-                    <a href="" class="link-info text-decoration-none">
-                        <div class="card h-100 shadow-sm">
-                            <img src="../images/project4.jpg" class="card-img-top" alt="Project 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Project Three</h5>
-                                <p class="card-text">Machine learning model for intelligent recommendations.</p>
-                            </div>
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/plc-control.jpg" class="card-img-top" alt="PLC Automation System">
+                        <div class="card-body">
+                            <h5 class="card-title text-info fw-semibold">PLC Automation System</h5>
+                            <p class="card-text text-muted">
+                                Built a motor control system using PLC logic for start/stop control, overload
+                                protection,
+                                and automatic feedback monitoring.
+                            </p>
+                            <p><strong>Tools:</strong> Siemens TIA Portal, RSLogix</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">View Project</a>
                         </div>
-                    </a>
+                    </div>
                 </div>
+
                 <div class="col-sm-12 col-md-4">
-                    <a href="" class="link-info text-decoration-none">
-                        <div class="card h-100 shadow-sm">
-                            <img src="../images/project4.jpg" class="card-img-top" alt="Project 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Project Three</h5>
-                                <p class="card-text">Machine learning model for intelligent recommendations.</p>
-                            </div>
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/arduino-automation.jpg" class="card-img-top" alt="Arduino Automation">
+                        <div class="card-body">
+                            <h5 class="card-title text-info fw-semibold">Arduino-Based Automation Project</h5>
+                            <p class="card-text text-muted">
+                                Designed an automated system for environmental monitoring and control using sensors and
+                                microcontrollers.
+                            </p>
+                            <p><strong>Tools:</strong> Arduino IDE, C++, Proteus</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">View Project</a>
                         </div>
-                    </a>
+                    </div>
                 </div>
+
                 <div class="col-sm-12 col-md-4">
-                    <a href="" class="link-info text-decoration-none">
-                        <div class="card h-100 shadow-sm">
-                            <img src="../images/project4.jpg" class="card-img-top" alt="Project 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Project Three</h5>
-                                <p class="card-text">Machine learning model for intelligent recommendations.</p>
-                            </div>
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/smart-energy.jpg" class="card-img-top" alt="Smart Energy Management">
+                        <div class="card-body">
+                            <h5 class="card-title text-info fw-semibold">Smart Energy Management System</h5>
+                            <p class="card-text text-muted">
+                                Built an automated load monitoring system that switches power sources based on real-time
+                                consumption and availability.
+                            </p>
+                            <p><strong>Tools:</strong> Raspberry Pi, IoT Platform</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">View Project</a>
                         </div>
-                    </a>
+                    </div>
                 </div>
+
+                <!-- Software & Web Integration -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/iot-dashboard.jpg" class="card-img-top" alt="IoT Web Dashboard">
+                        <div class="card-body">
+                            <h5 class="card-title text-info fw-semibold">IoT Energy Monitoring Dashboard</h5>
+                            <p class="card-text text-muted">
+                                Developed a responsive web app for visualizing live sensor data from an energy
+                                monitoring
+                                system.
+                            </p>
+                            <p><strong>Tools:</strong> HTML, Bootstrap, Firebase, Chart.js</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/engineering-management.jpg" class="card-img-top"
+                            alt="Engineering Management System">
+                        <div class="card-body">
+                            <h5 class="card-title text-info fw-semibold">Engineering Project Management System</h5>
+                            <p class="card-text text-muted">
+                                Built a web-based platform to manage electrical maintenance schedules, clients, and
+                                reports.
+                            </p>
+                            <p><strong>Tools:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/portfolio-website.jpg" class="card-img-top" alt="Portfolio Website">
+                        <div class="card-body">
+                            <h5 class="card-title text-info fw-semibold">Personal Portfolio Website</h5>
+                            <p class="card-text text-muted">
+                                Designed and developed my personal website to showcase my electrical and software
+                                engineering projects.
+                            </p>
+                            <p><strong>Tools:</strong> HTML, Bootstrap, JS</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
+
+
     <!-- Services -->
-    <section id="services" class="p-3 p-md-5 bg-light">
+    <section id="services" class="p-2 p-md-5 bg-light">
         <div class="container">
             <h2 class="fw-bold mb-4 text-info text-center">What I Offer</h2>
-            <p class="text-dark text-center mb-5">As an Electrical and Telecommunications Engineer, I provide a wide range of services
-                that combine innovation, technical precision, and hands-on expertise.</p>
+            <p class="text-dark text-center mb-5">
+                As an Electrical and Telecommunications Engineer, I provide a wide range of services
+                that combine innovation, technical precision, and hands-on expertise.
+            </p>
 
-            <div class="row g-4">
-
-                <!-- Electrical Installation -->
-                <div class="col-sm-12 col-md-4 text-center shadow-sm p-4 bg-white rounded">
-                    <i class="bi bi-lightning-charge display-4 text-info"></i>
-                    <h5 class="mt-3 fw-semibold">Electrical Design & Installation</h5>
-                    <p>Professional installation, inspection, and maintenance of electrical systems, power lines,
-                        lighting,
-                        and machinery for domestic and industrial applications.</p>
+            <div class="row g-2">
+                <!-- Electrical Design & Installation -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-lightning-charge display-4 text-info"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Electrical Design & Installation</h5>
+                            <p class="card-text">
+                                Professional installation, inspection, and maintenance of electrical systems, power
+                                lines,
+                                lighting, and machinery for domestic and industrial applications.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Power & Energy Systems -->
-                <div class="col-sm-12 col-md-4 text-center shadow-sm p-4 bg-white rounded">
-                    <i class="bi bi-battery-charging display-4 text-info"></i>
-                    <h5 class="mt-3 fw-semibold">Power & Energy Systems</h5>
-                    <p>Design and integration of solar PV systems, inverters, and hybrid energy solutions promoting
-                        sustainable and reliable power management.</p>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-battery-charging display-4 text-info"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Power & Energy Systems</h5>
+                            <p class="card-text">
+                                Design and integration of solar PV systems, inverters, and hybrid energy solutions
+                                promoting
+                                sustainable and reliable power management.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Telecommunication Systems -->
-                <div class="col-sm-12 col-md-4 text-center shadow-sm p-4 bg-white rounded">
-                    <i class="bi bi-wifi display-4 text-info"></i>
-                    <h5 class="mt-3 fw-semibold">Telecommunication Systems</h5>
-                    <p>Designing, installing, and maintaining data networks, fiber optics, and communication systems
-                        ensuring fast and stable connectivity.</p>
+                <!-- Telecommunication & Networking -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-wifi display-4 text-info"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Telecommunication & Networking</h5>
+                            <p class="card-text">
+                                Designing, installing, and maintaining data networks, fiber optics, and communication
+                                systems
+                                ensuring fast and stable connectivity.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Control Systems & Automation -->
-                <div class="col-sm-12 col-md-4 text-center shadow-sm p-4 bg-white rounded">
-                    <i class="bi bi-cpu display-4 text-info"></i>
-                    <h5 class="mt-3 fw-semibold">Control Systems & Automation</h5>
-                    <p>PLC programming, motor control setups, and process automation solutions for industrial efficiency
-                        and
-                        safety.</p>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-cpu display-4 text-info"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Control Systems & Automation</h5>
+                            <p class="card-text">
+                                PLC programming, motor control setups, and process automation solutions for industrial
+                                efficiency
+                                and safety.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Testing & Maintenance -->
-                <div class="col-sm-12 col-md-4 text-center shadow-sm p-4 bg-white rounded">
-                    <i class="bi bi-tools display-4 text-info"></i>
-                    <h5 class="mt-3 fw-semibold">Testing & Maintenance</h5>
-                    <p>Electrical fault diagnosis, performance testing, and preventive maintenance to guarantee
-                        reliability
-                        and compliance.</p>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-tools display-4 text-info"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Testing & Maintenance</h5>
+                            <p class="card-text">
+                                Electrical fault diagnosis, performance testing, and preventive maintenance to guarantee
+                                reliability
+                                and compliance.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Consultancy & Training -->
-                <div class="col-sm-12 col-md-4 text-center shadow-sm p-4 bg-white rounded">
-                    <i class="bi bi-person-workspace display-4 text-info"></i>
-                    <h5 class="mt-3 fw-semibold">Consultancy & Training</h5>
-                    <p>Providing expert consulting on system design, safety standards, and hands-on mentorship for
-                        upcoming
-                        engineers and technicians.</p>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-person-workspace display-4 text-info"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Consultancy & Training</h5>
+                            <p class="card-text">
+                                Providing expert consulting on system design, safety standards, and hands-on mentorship
+                                for
+                                upcoming engineers and technicians.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Frontend Web Development -->
-                <div class="col-sm-12 col-md-4 text-center shadow-sm p-4 bg-white rounded">
-                    <i class="bi bi-code-slash display-4 text-info"></i>
-                    <h5 class="mt-3 fw-semibold">Frontend Web Development</h5>
-                    <p>Building responsive and visually appealing web interfaces using HTML, CSS, JavaScript, and
-                        Bootstrap.
-                    </p>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-code-slash display-4 text-info"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Frontend Web Development</h5>
+                            <p class="card-text">
+                                Building responsive and visually appealing web interfaces using HTML, CSS, JavaScript,
+                                and
+                                Bootstrap.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Backend Web Development -->
-                <div class="col-sm-12 col-md-4 text-center shadow-sm p-4 bg-white rounded">
-                    <i class="bi bi-server display-4 text-info"></i>
-                    <h5 class="mt-3 fw-semibold">Backend Development</h5>
-                    <p>Creating and managing secure, efficient server-side systems with database integration and RESTful
-                        APIs.</p>
+                <!-- Backend Development -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-server display-4 text-info"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Backend Development</h5>
+                            <p class="card-text">
+                                Creating and managing secure, efficient server-side systems with database integration
+                                and
+                                RESTful APIs.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- UI/UX Design -->
-                <div class="col-sm-12 col-md-4 text-center shadow-sm p-4 bg-white rounded">
-                    <i class="bi bi-brush display-4 text-info"></i>
-                    <h5 class="mt-3 fw-semibold">UI/UX Design</h5>
-                    <p>Crafting intuitive, user-friendly digital experiences with a balance of clean design and
-                        functional
-                        flow.</p>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-brush display-4 text-info"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">UI/UX Design</h5>
+                            <p class="card-text">
+                                Crafting intuitive, user-friendly digital experiences with a balance of clean design and
+                                functional flow.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
 
 
+
     <!-- Blog -->
-    <section id="blog" class="bg-light p-3 p-md-5">
+    <section id="blog" class="bg-light p-2 p-md-5">
         <div class="container">
 
-            <h2 class="text-center mb-4">Latest Blog Posts</h2>
+            <h2 class="fw-bold text-info text-center mb-4">Latest Blog Posts</h2>
 
-            <div class="row g-4">
-                <div class="col-sm-12 col-md-4 glass-card">
-                    <div class="card shadow-sm">
+            <div class="row g-2">
+                <div class="col-sm-12 col-md-4 ">
+                    <div class="card h-100 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Docker Container</h5>
                             <p class="card-text">A Beginner's Guide to Setting Up Your First Docker Container</p>
-                            <a href="#" class="btn btn-link link-info">Read More</a>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-4 glass-card">
-                    <div class="card shadow-sm">
+                <div class="col-sm-12 col-md-4 ">
+                    <div class="card h-100 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Nature Exploration</h5>
                             <p class="card-text">The Ultimate 3-Day Itinerary for Exploring Karura Forest Reserves.</p>
-                            <a href="#" class="btn btn-link">Read More</a>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-4 glass-card">
-                    <div class="card shadow-sm">
+                <div class="col-sm-12 col-md-4 ">
+                    <div class="card h-100 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Product Review & Comparison</h5>
                             <p class="card-text">Windows vs Linux: Which is the Better for Developers?</p>
-                            <a href="#" class="btn btn-link">Read More</a>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -361,53 +516,99 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="p-3 p-md-5">
+    <section id="contact" class="contact-section">
         <div class="container">
-            <h2 class="text-center mb-4">Contact Me</h2>
-            <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-6">
+            <div class="contact-header">
+                <h2 class="fw-bold text-center text-info">Get in touch</h2>
+                <span class="underline"></span>
+                <p class="text-muted text-center mt-3">Feel free to reach out through the form below or connect via
+                    Email or LinkedIn.</p>
+            </div>
 
-                    <form id="contact" action="https://formspree.io/f/xgvnoybw" method="POST">
-                        <div class="mb-3">
-                            <label class="form-label">Name</label>
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Message</label>
-                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-                        </div>
+            <div class="row g-3">
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="container">
+                        <h3 class="fw-bold text-center mb-4">Contact Form</h3>
+                        <form class="container text-center">
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <input type="text" class="form-control" placeholder="Enter your name" required>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                                </div>
 
-                        <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
-                    </form>
-
-                    <div id="loader"></div>
-
-                    <div class="my-modal" id="customModal">
-                        <div class="modal-window">
-                            <div class="modal-header">
-                                <h5 class="modal-title text-secondary-emphasis">Submission Status</h5>
+                                <div class="col-12 mb-3">
+                                    <input type="text" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="5" placeholder="Submit your message request"
+                                        required></textarea>
+                                </div>
                             </div>
-                            <div class="modal-body">
-                                <p class="text-info">Message has been received successfully!</p>
+
+                            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="container text-center">
+                        <h3 class="fw-bold text-center mb-4">Contact Details</h3>
+
+                        <div class="row text-center">
+                            <div class="col-12 col-md-6">
+                                <div class="contact-card">
+                                    
+                                    <div class="col">
+                                        <small class="text-uppercase text-muted d-block">Address</small>
+                                        <strong>Nairobi, Kenya</strong>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="close-trigger btn btn-primary">Close</button>
+
+                            <div class="col-12 col-md-6">
+                                <div class="contact-card">
+                                    
+                                    <div>
+                                        <small class="text-uppercase text-muted d-block">Mobile</small>
+                                        <strong>+254 715 069 901</strong>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="contact-card">
+                                    
+                                    <div>
+                                        <small class="text-uppercase text-muted d-block">Email</small>
+                                        <strong>mongarejoshua254@gmail.com</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <h6 class="fw-bold text-center mb-3">Social Media</h6>
+                        <div class="social-media-icons">
+                            <a href="#" class="text-decoration-none"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="text-decoration-none"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-decoration-none"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-decoration-none"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center p-3">
-        <p class="mb-0">&copy; 2025 TechWithJosh. All Rights Reserved.</p>
+        <p class="mb-2">Electrical & Telecom Engineer | Powered by TechWithJosh</p>
+        <p>&copy; 2025 All Rights Reserved.</p>
     </footer>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
