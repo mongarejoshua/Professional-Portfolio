@@ -1,34 +1,21 @@
-const modal = document.getElementById('customModal');
-const submitBtn = document.getElementById('submitBtn');
-const closeTriggers = document.querySelectorAll('.close-trigger');
-const form = document.getElementById('contact')
-const loader = document.getElementById('loader')
-
-form.addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    // loader.classList.add('active');
-    // const formData = new FormData(form);
-    // const data = Object.formEntries(formData.entries())
-    // console.log("Data collected:", data)
-    setTimeout(() => {
-        loader.classList.remove('active')
-        submitBtn.addEventListener('click', function () {
-            modal.classList.add('show-state');
-        });
-
-    }, 2000);
-})
 
 
-function hideModal() {
-    modal.classList.remove('show-state');
-}
-closeTriggers.forEach(btn => {
-    btn.addEventListener('click', hideModal);
-});
-window.addEventListener('click', function (event) {
-    if (event.target === modal) {
-        hideModal();
-    }
+(function () {
+    emailjs.init("ZcBjf3bnrw-K689bo"); // from your EmailJS dashboard
+})();
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.send("service_1n5d7uo", "template_w6vjoby", {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+    })
+        .then(() => {
+            alert("Message sent successfully! Check your inbox.");
+            e.target.reset();
+        })
+        .catch(err => alert("Failed to send message: " + err));
 });
