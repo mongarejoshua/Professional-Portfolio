@@ -1,0 +1,24 @@
+
+.social-media-icons .social-icon-link i {
+    font-size: 2.2rem;
+    color: #323944;
+    transition: color 0.3s ease;
+}
+.social-media-icons .social-icon-link {
+    margin: 0 0.6rem;
+}
+
+.social-media-icons .social-icon-link:hover i {
+    color: #0a58ca;
+    transform: scale(1.1);
+}
+
+.follow-me-box {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
