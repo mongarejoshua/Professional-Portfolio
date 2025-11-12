@@ -2,13 +2,7 @@
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won’t be available)
-$theme-colors: (
-  "primary": #7cabf3,
-  "secondary": #6c757d,
-  "danger": #e63946,
-  "info": #17a2b8,
-  "custom": #ffb703 // new color added
-);
+
   
 
 @import "../node_modules/bootstrap/scss/bootstrap";
