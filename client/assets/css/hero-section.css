@@ -1,5 +1,9 @@
 .home-section {
-    background: url('../images/hero-bg.jpg') center/cover no-repeat;
+    position: relative;
+    background: url('../images/hero-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     padding-top: 75px;
 }
@@ -7,7 +11,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     height: 100vh;
     background: rgba(0, 0, 0, 0.6);
     z-index: 0;

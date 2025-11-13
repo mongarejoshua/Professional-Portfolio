@@ -1,6 +1,6 @@
 .service {
     position: relative;
-    background: url('..//images/service-bg.jpg') center/cover no-repeat;
+    background: url('../images/service-bg.jpg') center/cover no-repeat;
     color: white;
 }
 
