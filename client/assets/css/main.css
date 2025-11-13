@@ -34,4 +34,7 @@
 
 body {
     font-family: "Fira Sans";
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
