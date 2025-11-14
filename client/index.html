@@ -749,19 +749,11 @@
                 <div class="col-12 col-md-8 col-lg-6 bg-white rounded pt-4 mb-3 pb-3 shadow-lg m-auto">
                     <h3 class="fw-bold text-center mb-4">Contact Form</h3>
 
-                    <!-- Success alert -->
-                    <div id="successAlert" class="alert alert-success alert-dismissible fade" role="alert">
-                        Your message was sent successfully! 🚀
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    </div>
                     
-                    <!-- Error alert -->
-                    <div id="errorAlert" class="alert alert-danger alert-dismissible fade" role="alert">
-                        Something went wrong. Try again 😬
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    </div>
 
                     <form id="contactForm" class="container text-center" method="POST" data-netlify="true" name="contact">
+                        <input type="hidden" name="form-name" value="contact">
+
                         <div class="row">
                             <label class="form-label text-start" for="name"><i
                                     class="bi bi-person-fill text-muted me-2"></i>Name</label>
@@ -793,7 +785,14 @@
                             <i class="bi bi-send-fill me-2"></i>
                             Send Message
                         </button>
+                        
+                        <!-- Success + Loading UI -->
+                        <p id="loading" style="display:none; color: gray;">Sending...</p>
+                        <p id="success" style="display:none; color: green;">Message sent successfully! 🎉</p>
+
                     </form>
+
+
                 </div>
             </div>
 
