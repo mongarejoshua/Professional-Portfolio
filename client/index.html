@@ -131,12 +131,14 @@
 
                 <div class="col-sm-12 col-md-4">
                     <div class="card h-100 shadow-sm border-0 bg-light">
-                        <img src="./assets/project-demos/project1" class="card-img-top img-fluid" alt="Domestic Wiring System">
+                        <img src="./assets/project-demos/project1" class="card-img-top img-fluid"
+                            alt="Domestic Wiring System">
                         <div class="card-body">
                             <h5 class="card-title text-primary-emphasis fw-semibold">LED Blinker Circuit
                             </h5>
                             <p class="card-text text-muted">
-                                Designed and implemented a Blinker circuit using tinkerCAD breadboard design and KiCAD for schematic and PCB layout
+                                Designed and implemented a Blinker circuit using tinkerCAD breadboard design and KiCAD
+                                for schematic and PCB layout
                             </p>
                             <p><strong>Tools:</strong> KiCAD, Tinker</p>
                             <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal"
@@ -152,7 +154,8 @@
                             <h5 class="card-title text-primary-emphasis fw-semibold">Motion Detector Alarm
                             </h5>
                             <p class="card-text text-muted">
-                                Designed and simulated an automatic system that detects motion and rings an alarm. For security purposes
+                                Designed and simulated an automatic system that detects motion and rings an alarm. For
+                                security purposes
                             </p>
                             <p><strong>Tools:</strong> KiCAD, TinkerCAD</p>
                             <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal"
@@ -253,7 +256,8 @@
                             <h5 class="card-title text-primary-emphasis fw-semibold">School Management System
                             </h5>
                             <p class="card-text text-muted">
-                                Designed and developed a system to track learners grades, finacial status, academic progress.
+                                Designed and developed a system to track learners grades, finacial status, academic
+                                progress.
                             </p>
                             <p><strong>Tools:</strong> HTML, CSS, Bootstrap, Javascript</p>
                             <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal"
@@ -749,45 +753,67 @@
                 <div class="col-12 col-md-8 col-lg-6 bg-white rounded pt-4 mb-3 pb-3 shadow-lg m-auto">
                     <h3 class="fw-bold text-center mb-4">Contact Form</h3>
 
-                    
 
-                    <form id="contactForm" class="container text-center" method="POST" data-netlify="true" name="contact-form">
+
+                    <form id="contactForm" class="container text-center" method="POST" data-netlify="true"
+                        name="contact-form">
                         <input type="hidden" name="contact-form" value="contact">
 
                         <div class="row">
                             <label class="form-label text-start" for="name"><i
                                     class="bi bi-person-fill text-muted me-2"></i>Name</label>
                             <div class="col-12 mb-3">
-                                <input id="name" type="text" class="form-control" placeholder="Enter your name"
-                                    required>
+                                <input name="name" id="name" type="text" class="form-control"
+                                    placeholder="Enter your name" required>
                             </div>
                             <label class="form-label text-start" for="email"><i
                                     class="bi bi-at text-muted me-2"></i>Email</label>
                             <div class="col-12 mb-3">
-                                <input id="email" type="email" class="form-control" placeholder="Enter your email"
-                                    required>
+                                <input name="email" id="email" type="email" class="form-control"
+                                    placeholder="Enter your email" required>
                             </div>
                             <label class="form-label text-start" for="subject"><i
                                     class="bi bi-tag-fill text-muted me-2"></i>Subject</label>
                             <div class="col-12 mb-3">
-                                <input id="subject" type="text" class="form-control" placeholder="Title of your request"
-                                    required>
+                                <input name="subject" id="subject" type="text" class="form-control"
+                                    placeholder="Title of your request" required>
                             </div>
                             <label class="form-label text-start" for="message"><i
                                     class="bi bi-chat-dots-fill text-muted me-2"></i>
                                 Your Comments</label>
                             <div class="mb-3">
-                                <textarea id="message" class="form-control" rows="5"
+                                <textarea name="subject" id="message" class="form-control" rows="5"
                                     placeholder="Submit your message request" required></textarea>
                             </div>
                         </div>
-                        <button id="sendBtn" type="submit" class="btn btn-outline-primary rounded shadow-md">
+                        <button id="sendBtn" type="submit" class="btn btn-outline-primary rounded shadow-md"
+                            data-bs-target="#staticBackdrop" data-bs-toggle="modal">
                             <i class="bi bi-send-fill me-2"></i>
                             Send Message
                         </button>
-                        
+
                         <!-- Success + Loading UI -->
-                        
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Submission Status</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Message has been sent successfully!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </form>
 
 
