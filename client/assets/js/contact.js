@@ -21,5 +21,12 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
         form.reset()
 
     }, 3000)
+
+    const formData = new FormData(form);
+
+    const response = await fetch("/", {
+        method: "POST",
+        body: formData
+    });
     
 })
