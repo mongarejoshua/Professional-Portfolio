@@ -21,3 +21,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.toast-icon {
+    width: 14px;
+    height: 14px;
+    margin: 0.75rem;
+    border-radius: 3px;
+    flex-shrink: 0;
+}

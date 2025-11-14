@@ -787,31 +787,32 @@
                             </div>
                         </div>
                         <button id="sendBtn" type="submit" class="btn btn-outline-primary rounded shadow-md">
-                            <i class="bi bi-send-fill me-2"></i>
-                            Send Message
+                            <span><i class="bi bi-send-fill me-2"></i>
+                                Send Message</span>
                         </button>
 
                         <!-- Success + Loading UI -->
+                        <!-- Toast -->
+                        <div class="position-fixed top-0 start-50 translate-middle-x mt-3"
+                            style="z-index: 1080; min-width: 300px;">
+                            <div id="successToast" class="toast align-items-start text-bg-light border-0" role="alert"
+                                aria-live="assertive" aria-atomic="true" data-bs-autohide="true" data-bs-delay="6000">
+                                <div class="d-flex">
+                                    <!-- Colored square -->
+                                    <div class="toast-icon bg-primary"></div>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Submission Status</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Message has been sent successfully!</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                    <div class="toast-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <strong class="me-auto">Submission Status</strong>
+                                            <small>just now</small>
+                                        
+                                        </div>
+                                        <div>Message has been submitted successfully</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
 
                     </form>
 
