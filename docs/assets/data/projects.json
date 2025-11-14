@@ -1,0 +1,98 @@
+[
+  {
+    "id": "projectModalOne",
+    "title": "LED Blinker Circuit",
+    "image": "./assets/project-demos/project1",
+    "desc": "Designed and implemented a Blinker circuit using TinkerCAD breadboard design and KiCAD for schematic and PCB layout.",
+    "tools": "KiCAD, TinkerCAD",
+    "modalTitle": "LED Blinker Circuit Details",
+    "modalImage": "./assets/images/e-project1.jpg",
+    "modalLearn": [
+      "Understanding basic LED and resistor behavior.",
+      "Blinking automation using simple ICs or microcontrollers."
+    ]
+  },
+
+  {
+    "id": "projectModalTwo",
+    "title": "Motion Detector Alarm",
+    "image": "../assets/images/e-project2.jpeg",
+    "desc": "Designed a system that detects motion and rings an alarm. Ideal for security applications.",
+    "tools": "KiCAD, TinkerCAD",
+    "modalTitle": "Motion Detector Alarm Details",
+    "modalImage": "../assets/images/e-project2.jpeg",
+    "modalLearn": ["PIR sensor integration.", "Alarm triggering mechanisms."]
+  },
+
+  {
+    "id": "projectModalThree",
+    "title": "Street Light Sensor System",
+    "image": "../assets/images/e-project3.jpg",
+    "desc": "Real-time automatic lighting based on natural light levels using sensors and microcontrollers.",
+    "tools": "Arduino, KiCAD, TinkerCAD",
+    "modalTitle": "Street Light Sensor System Details",
+    "modalImage": "../assets/images/e-project3.jpg",
+    "modalLearn": [
+      "Light-dependent resistor (LDR) usage.",
+      "Power-efficient automation."
+    ]
+  },
+
+  {
+    "id": "projectModalFour",
+    "title": "LAN & Network Design",
+    "image": "../assets/images/e-project4.jpg",
+    "desc": "Designed a campus-wide network with subnetting, routing, switching and IP planning.",
+    "tools": "Cisco Packet Tracer, GNS3",
+    "modalTitle": "LAN & Network Design Details",
+    "modalImage": "../assets/images/e-project4.jpg",
+    "modalLearn": [
+      "Subnetting and network segmentation.",
+      "Router and switch configurations."
+    ]
+  },
+
+  {
+    "id": "projectModalFive",
+    "title": "Microstrip Antenna Design",
+    "image": "../assets/images/e-project5.jpg",
+    "desc": "Simulated a patch antenna for 2.4GHz to improve radiation efficiency.",
+    "tools": "CST Studio, HFSS",
+    "modalTitle": "Microstrip Antenna Design Details",
+    "modalImage": "../assets/images/e-project5.jpg",
+    "modalLearn": ["PCB antenna design.", "Frequency tuning and simulation."]
+  },
+
+  {
+    "id": "projectModalSix",
+    "title": "Blog Site",
+    "image": "../assets/images/e-project6.jpg",
+    "desc": "Developed a fully responsive blog website with modern UI components.",
+    "tools": "HTML, CSS, Bootstrap, JavaScript",
+    "modalTitle": "Blog Site Details",
+    "modalImage": "../assets/images/e-project6.jpg",
+    "modalLearn": ["Frontend UI design.", "Responsive grid layouting."]
+  },
+
+  {
+    "id": "projectModalSeven",
+    "title": "Movie Streaming Site",
+    "image": "../assets/images/e-project7.jpg",
+    "desc": "Built a movie streaming interface using HTML, CSS and JavaScript.",
+    "tools": "HTML, CSS, Bootstrap, JavaScript",
+    "modalTitle": "Movie Streaming Site Details",
+    "modalImage": "../assets/images/e-project7.jpg",
+    "modalLearn": ["Media UI/UX design.", "Content arrangement and modals."]
+  },
+
+  {
+    "id": "projectModalEight",
+    "title": "School Management System",
+    "image": "../assets/images/e-project8.jpg",
+    "desc": "Developed a system to track grades, financial status, and academic progress.",
+    "tools": "HTML, CSS, Bootstrap, JavaScript",
+    "modalTitle": "School Management System Details",
+    "modalImage": "../assets/images/e-project8.jpg",
+    "modalLearn": ["Student data structuring.", "Admin panel logic."]
+  }
+]

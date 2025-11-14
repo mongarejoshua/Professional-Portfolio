@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mongare</title>
+    <link rel="shortcut icon" href="./public/favicon.jpg" type="image/x-icon">
+
+    <!-- Bootstrap links -->
+
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+     -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/hero-section.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/projects.css">
+    <link rel="stylesheet" href="./assets/css/services.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+
+</head>
+
+<body class="container-xxl p-0">
+    <!-- navbar components -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4 text-primary" href="#home">
+                <i class="bi bi-code-slash me-2"></i>TECHWITHJOSH
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Added text-white to nav-links for fixed-top dark background and icons for aesthetics -->
+                    <li class="nav-item"><a class="nav-link text-white" href="#home"><i
+                                class="bi bi-house-door-fill me-1"></i>HOME</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#about"><i
+                                class="bi bi-person-fill me-1"></i>ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#projects"><i
+                                class="bi bi-kanban-fill me-1"></i>PROJECTS</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="https://github.com/mongarejoshua?tab=repositories"
+                            target="_blank">
+                            <i class="bi bi-github me-1"></i>GITHUB
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#services"><i
+                                class="bi bi-cpu-fill me-1"></i>SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#blog"><i
+                                class="bi bi-book-fill me-1"></i>BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact"><i
+                                class="bi bi-chat-dots-fill me-1"></i>CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="home" class="home-section text-white text-center vh-100">
+        <div class="overlay vh-100"></div>
+        <div class="container">
+            <p class="fw-light text-center">WELCOME TO TECHWITHJOSH PORTFOLIO</p>
+            <h1 class="fw-bolder fs-1 text-info text-center">I'm Mongare Joshua</h1>
+            <ul class="list-inline text-center">
+                <li class="list-inline-item fs-2 fw-semibold">Electrical Engineer |</li>
+                <li class="list-inline-item fs-2 fw-semibold">Telecommunications Professional |</li>
+                <li class="list-inline-item fs-2 fw-semibold">Frontend Web Developer</li>
+            </ul>
+            <p class="text-center fs-2 mt-5 pt-5">
+                I build and design electrical systems, networks, and web experiences that work flawlessly
+                together —
+                bridging physical
+                and digital innovation.
+            </p>
+            <div class="w-100 d-flex justify-content-center gap-2 mt-5">
+                <button id="downloadBtn" class="btn btn-outline-primary btn-lg">Download CV</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-light p-3 p-md-3 p-lg-5">
+        <div class="container">
+            <div class="row align-items-center g-4 bg-white p-2 rounded">
+                <h2 class="fw-bold text-center text-primary mb-4">About Me</h2>
+                <div class="col-md-6 text-center">
+                    <img src="./assets/images/about.jpeg" class="img-fluid rounded ratio-21x9" alt="Profile">
+                </div>
+                <div class="col-md-6">
+
+                    <p class="fs-5 text-center text-muted">
+                        I'm a dynamic student and developer, building a solid foundation as a Bachelor's
+                        degree candidate in Electrical and
+                        Telecommunication Engineering at Multimedia University of Kenya. Fueling my passion for
+                        technology, I
+                        also work as a
+                        part-time Front-End Web Developer, where I translate ideas into compelling, responsive, and
+                        functional
+                        user interfaces.
+                        My unique background allows me to bridge the gap between underlying engineering principles
+                        and
+                        practical
+                        digital
+                        applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="p-2 bg-white">
+        <div class="container pb-4">
+            <h2 class="text-center fw-bold text-primary mb-4">Latest Projects</h2>
+            <p class="text-center fs-5 text-muted mb-5">
+                A showcase of hands-on electrical, telecommunications, automation, and web-based innovations that
+                demonstrate my technical range and engineering creativity.
+            </p>
+
+            <div class="row g-3" id="latest-projects"></div>
+
+            <div class="col-sm-12 col-md-4">
+                <a href="projects.html"
+                    class="btn btn-outline-info pt-4 pb-4 text-primary-emphasis w-100 h-100 d-flex flex-column justify-content-center align-items-center shadow-sm border-0 bg-light"
+                    style="text-decoration: none;">
+            
+                    <h5 class="mb-2 fw-bold text-primary-emphasis">View All Projects</h5>
+                    <i class="bi bi-arrow-right-circle-fill fs-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- modals for the projects -->
+
+
+    <!-- Services -->
+    <section id="services" class="service p-2 p-md-3 p-lg-5 bg-light">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2 class="fw-bold mb-4 text-primary text-center">What I Offer</h2>
+            <p class="text-white text-center mb-5">
+                As an Electrical and Telecommunications Engineer, I provide a wide range of services
+                that combine innovation, technical precision, and hands-on expertise.
+            </p>
+
+            <div class="row g-2">
+                <!-- Electrical Design & Installation -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-lightning-charge display-4 text-primary"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-primary-emphasis">Electrical Design &
+                                Installation
+                            </h5>
+                            <p class="card-text">
+                                Professional installation, inspection, and maintenance of electrical systems,
+                                power
+                                lines,
+                                lighting, and machinery for domestic and industrial applications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Power & Energy Systems -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-battery-charging display-4 text-primary"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-primary-emphasis">Power & Energy Systems</h5>
+                            <p class="card-text">
+                                Design and integration of solar PV systems, inverters, and hybrid energy
+                                solutions
+                                promoting
+                                sustainable and reliable power management.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Telecommunication & Networking -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-wifi display-4 text-primary"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-primary-emphasis">Telecommunication & Networking
+                            </h5>
+                            <p class="card-text">
+                                Designing, installing, and maintaining data networks, fiber optics, and
+                                communication
+                                systems
+                                ensuring fast and stable connectivity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Control Systems & Automation -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-cpu display-4 text-primary"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-primary-emphasis">Control Systems & Automation
+                            </h5>
+                            <p class="card-text">
+                                PLC programming, motor control setups, and process automation solutions for
+                                industrial
+                                efficiency
+                                and safety.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testing & Maintenance -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-tools display-4 text-primary"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-primary-emphasis">Testing & Maintenance</h5>
+                            <p class="card-text">
+                                Electrical fault diagnosis, performance testing, and preventive maintenance to
+                                guarantee
+                                reliability
+                                and compliance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Consultancy & Training -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-person-workspace display-4 text-primary"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-primary-emphasis">Consultancy & Training</h5>
+                            <p class="card-text">
+                                Providing expert consulting on system design, safety standards, and hands-on
+                                mentorship
+                                for
+                                upcoming engineers and technicians.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Web Development -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-code-slash display-4 text-primary"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-primary-emphasis">Frontend Web Development</h5>
+                            <p class="card-text">
+                                Building responsive and visually appealing web interfaces using HTML, CSS,
+                                JavaScript,
+                                and
+                                Bootstrap.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-1">
+                        <i class="bi bi-brush display-4 text-primary"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">UI/UX Design</h5>
+                            <p class="card-text">
+                                Crafting intuitive, user-friendly digital experiences with a balance of clean
+                                design and
+                                functional flow.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="bg-white p-2 p-md-3 p-lg-5">
+        <div class="container">
+
+            <h2 class="fw-bold text-primary text-center mb-4">Latest Blog Posts</h2>
+
+            <div class="row g-2">
+
+                <div class="col-sm-12 col-md-4 ">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body bg-light">
+                            <h5 class="card-title">Guide to Circuit Simulation</h5>
+                            <p class="card-text">A Beginner's Guide to Setting Up Your First Docker Container
+                            </p>
+                            <p class="card-text text-muted small">
+                                <i class="bi bi-calendar me-1"></i> November 10, 2025 |
+                                <i class="bi bi-person-fill me-1"></i> by Jane Doe
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 ">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body bg-light">
+                            <h5 class="card-title">Top Open Source Tools for Engineers</h5>
+                            <p class="card-text">The Ultimate 3-Day Itinerary for Exploring Karura Forest
+                                Reserves.</p>
+                            <p class="card-text text-muted small">
+                                <i class="bi bi-calendar me-1"></i> November 10, 2025 |
+                                <i class="bi bi-person-fill me-1"></i> by Jane Doe
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 ">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body bg-light">
+                            <h5 class="card-title">Product Review & Comparison</h5>
+                            <p class="card-text">Windows vs Linux: Which is the Better for Developers?</p>
+                            <p class="card-text text-muted small">
+                                <i class="bi bi-calendar me-1"></i> November 10, 2025 |
+                                <i class="bi bi-person-fill me-1"></i> by Jane Doe
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-light contact-section p-2 p-md-3 p-lg-5">
+        <div class="container">
+            <div class="contact-header">
+                <h2 class="fw-bold text-center text-primary">Get in touch</h2>
+                <span class="underline"></span>
+                <p class="text-muted text-center mt-3">Feel free to reach out through the form below or connect via
+                    Email,
+                    Linked or Other Platforms</p>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-6 bg-white rounded pt-4 mb-3 pb-3 shadow-lg m-auto">
+                    <h3 class="fw-bold text-center mb-4">Contact Form</h3>
+
+
+
+                    <form id="contactForm" class="container text-center" method="POST" data-netlify="true"
+                        name="contact-form">
+                        <input type="hidden" name="contact-form" value="contact">
+
+                        <div class="row">
+                            <label class="form-label text-start" for="name"><i
+                                    class="bi bi-person-fill text-muted me-2"></i>Name</label>
+                            <div class="col-12 mb-3">
+                                <input name="name" id="name" type="text" class="form-control"
+                                    placeholder="Enter your name" required>
+                            </div>
+                            <label class="form-label text-start" for="email"><i
+                                    class="bi bi-at text-muted me-2"></i>Email</label>
+                            <div class="col-12 mb-3">
+                                <input name="email" id="email" type="email" class="form-control"
+                                    placeholder="Enter your email" required>
+                            </div>
+                            <label class="form-label text-start" for="subject"><i
+                                    class="bi bi-tag-fill text-muted me-2"></i>Subject</label>
+                            <div class="col-12 mb-3">
+                                <input name="subject" id="subject" type="text" class="form-control"
+                                    placeholder="Title of your request" required>
+                            </div>
+                            <label class="form-label text-start" for="message"><i
+                                    class="bi bi-chat-dots-fill text-muted me-2"></i>
+                                Your Comments</label>
+                            <div class="mb-3">
+                                <textarea name="subject" id="message" class="form-control" rows="5"
+                                    placeholder="Submit your message request" required></textarea>
+                            </div>
+                        </div>
+                        <button id="sendBtn" type="submit" class="btn btn-outline-primary rounded shadow-md">
+                            <span><i class="bi bi-send-fill me-2"></i>
+                                Send Message</span>
+                        </button>
+
+                        <!-- Success + Loading UI -->
+                        <!-- Toast -->
+                        <div class="position-fixed top-0 start-50 translate-middle-x mt-3"
+                            style="z-index: 1080; min-width: 300px;">
+                            <div id="successToast" class="toast align-items-start text-bg-light border-0" role="alert"
+                                aria-live="assertive" aria-atomic="true" data-bs-autohide="true" data-bs-delay="6000">
+                                <div class="d-flex">
+                                    <!-- Colored square -->
+                                    <div class="toast-icon bg-primary"></div>
+
+                                    <div class="toast-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <strong class="me-auto">Submission Status</strong>
+                                            <small>just now</small>
+
+                                        </div>
+                                        <div>Message has been submitted successfully</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center p-3">
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-primary">Contact</h5>
+            <p class="small"><i class="bi bi-house-door me-2"></i> Nairobi, Kenya</p>
+            <p class="small"><i class="bi bi-phone me-2"></i> +254 715 069 901</p>
+            <p class="small"><i class="bi bi-envelope me-2"></i> mongarejoshua254@gmail.com</p>
+            <div class="social-media-icons">
+                <a href="#" class="text-decoration-none social-icon-link"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-decoration-none social-icon-link"><i class="bi bi-github"></i></a>
+                <a href="#" class="text-decoration-none social-icon-link"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-decoration-none social-icon-link"><i class="bi bi-threads"></i></a>
+                <a href="#" class="text-decoration-none social-icon-link"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-decoration-none social-icon-link"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+        <hr>
+        <p class="mb-2">Electrical & Telecom Engineer | Powered by TechWithJosh</p>
+        <p>&copy; 2025 All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/hero-section.js"></script>
+    <script src="./assets/js/latest-projects.js"></script>
+    <script src="./assets/js/contact.js"></script>
+
+
+</body>
+
+</html>
