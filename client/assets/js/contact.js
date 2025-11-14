@@ -1,21 +1,42 @@
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
+        e.preventDefault();
 
+    const form = e.target;
+    const btn = document.getElementById("sendBtn");
 
-(function () {
-    emailjs.init("ZcBjf3bnrw-K689bo"); // from your EmailJS dashboard
-})();
+    // Show loading spinner
+    btn.disabled = true;
+    btn.innerHTML = `
+    <span class="spinner-border spinner-border-sm me-2"></span>
+    Sending...
+    `;
 
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-    e.preventDefault();
+    try {
+        const formData = new FormData(form);
 
-    emailjs.send("service_1n5d7uo", "template_w6vjoby", {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value
-    })
-        .then(() => {
-            alert("Message sent successfully! Check your inbox.");
-            e.target.reset();
-        })
-        .catch(err => alert("Failed to send message: " + err));
+    const response = await fetch("/", {
+        method: "POST",
+    body: formData
+        });
+
+    if (response.ok) {
+        showAlert("successAlert");
+    form.reset();
+        } else {
+        showAlert("errorAlert");
+        }
+
+    } catch (err) {
+        showAlert("errorAlert");
+    }
+
+    // Reset button
+    btn.disabled = false;
+    btn.innerHTML = "Send Message";
 });
+
+    function showAlert(id) {
+    const alert = document.getElementById(id);
+    alert.classList.add("show");
+    setTimeout(() => alert.classList.remove("show"), 4000);
+}

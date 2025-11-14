@@ -748,7 +748,20 @@
             <div class="row">
                 <div class="col-12 col-md-8 col-lg-6 bg-white rounded pt-4 mb-3 pb-3 shadow-lg m-auto">
                     <h3 class="fw-bold text-center mb-4">Contact Form</h3>
-                    <form id="contactForm" class="container text-center">
+
+                    <!-- Success alert -->
+                    <div id="successAlert" class="alert alert-success alert-dismissible fade" role="alert">
+                        Your message was sent successfully! 🚀
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                    
+                    <!-- Error alert -->
+                    <div id="errorAlert" class="alert alert-danger alert-dismissible fade" role="alert">
+                        Something went wrong. Try again 😬
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+
+                    <form id="contactForm" class="container text-center" method="POST" data-netlify="true" name="contact">
                         <div class="row">
                             <label class="form-label text-start" for="name"><i
                                     class="bi bi-person-fill text-muted me-2"></i>Name</label>
