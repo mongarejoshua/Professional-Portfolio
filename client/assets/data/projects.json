@@ -94,5 +94,15 @@
     "modalTitle": "School Management System Details",
     "modalImage": "../assets/images/e-project8.jpg",
     "modalLearn": ["Student data structuring.", "Admin panel logic."]
+  },
+  {
+    "id": "projectModalEight",
+    "title": "School Management System",
+    "image": "../assets/images/e-project8.jpg",
+    "desc": "Developed a system to track grades, financial status, and academic progress.",
+    "tools": "HTML, CSS, Bootstrap, JavaScript",
+    "modalTitle": "School Management System Details",
+    "modalImage": "../assets/images/e-project8.jpg",
+    "modalLearn": ["Student data structuring.", "Admin panel logic."]
   }
 ]

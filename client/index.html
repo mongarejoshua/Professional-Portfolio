@@ -6,26 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mongare</title>
     <link rel="shortcut icon" href="./public/favicon.jpg" type="image/x-icon">
-
-    <!-- Bootstrap links -->
-
-    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-     -->
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css"> -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-
-
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/navbar.css">
-    <link rel="stylesheet" href="./assets/css/hero-section.css">
-    <link rel="stylesheet" href="./assets/css/about.css">
-    <link rel="stylesheet" href="./assets/css/projects.css">
-    <link rel="stylesheet" href="./assets/css/services.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
 
 </head>
 
@@ -128,22 +116,12 @@
                 demonstrate my technical range and engineering creativity.
             </p>
 
-            <div class="row g-3" id="latest-projects"></div>
+            <div class="row g-2" id="latest-projects"></div>
 
-            <div class="col-sm-12 col-md-4">
-                <a href="projects.html"
-                    class="btn btn-outline-info pt-4 pb-4 text-primary-emphasis w-100 h-100 d-flex flex-column justify-content-center align-items-center shadow-sm border-0 bg-light"
-                    style="text-decoration: none;">
-            
-                    <h5 class="mb-2 fw-bold text-primary-emphasis">View All Projects</h5>
-                    <i class="bi bi-arrow-right-circle-fill fs-2"></i>
-                </a>
-            </div>
+            <!-- Modals are injected here -->
+            <div id="modalContainer"></div>
         </div>
     </section>
-
-    <!-- modals for the projects -->
-
 
     <!-- Services -->
     <section id="services" class="service p-2 p-md-3 p-lg-5 bg-light">
@@ -401,17 +379,14 @@
 
                         <!-- Success + Loading UI -->
                         <!-- Toast -->
-                        <div class="position-fixed top-0 start-50 translate-middle-x mt-3"
-                            style="z-index: 1080; min-width: 300px;">
-                            <div id="successToast" class="toast align-items-start text-bg-light border-0" role="alert"
-                                aria-live="assertive" aria-atomic="true" data-bs-autohide="true" data-bs-delay="6000">
-                                <div class="d-flex">
-                                    <!-- Colored square -->
-                                    <div class="toast-icon bg-primary"></div>
-
+                        <div class="position-fixed top-0 start-50 translate-middle-x mt-1" style="z-index: 1080;">
+                            <div id="successToast" class="toast align-items-center text-bg-success border-0"
+                                role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true"
+                                data-bs-delay="6000">
+                                <div class="d-flex justify-content-center">
                                     <div class="toast-body">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <strong class="me-auto">Submission Status</strong>
+                                            <strong class="me-auto fs-6">Submission Status</strong>
                                             <small>just now</small>
 
                                         </div>
@@ -431,7 +406,6 @@
         </div>
 
     </section>
-
 
     <!-- Footer -->
     <footer class="bg-black text-white text-center p-3">
@@ -456,16 +430,16 @@
     </footer>
 
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-    <script src="./assets/js/navbar.js"></script>
-    <script src="./assets/js/hero-section.js"></script>
-    <script src="./assets/js/latest-projects.js"></script>
-    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/scripts/navbar.js"></script>
+    <script src="./assets/scripts/hero.js"></script>
+    <script src="./assets/scripts/projects-latest.js"></script>
+    <script src="./assets/scripts/contact.js"></script>
 
 
 </body>

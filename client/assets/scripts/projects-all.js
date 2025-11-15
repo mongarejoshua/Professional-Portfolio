@@ -1,12 +1,12 @@
-fetch("./assets/data/all-projects.json")
-    .then(res => res.json())
-    .then(projects => {
-        const container = document.getElementById("allProjectsContainer");
-        const modalContainer = document.getElementById("modalContainer");
+fetch("../assets/data/projects.json")
+  .then(res => res.json())
+  .then(projects => {
+    const container = document.getElementById("allProjectsContainer");
+    const modalContainer = document.getElementById("modalContainer");
 
-        projects.forEach(p => {
-            // Project Card
-            container.innerHTML += `
+    projects.forEach(p => {
+      // Project Card
+      container.innerHTML += `
         <div class="col-sm-12 col-md-4">
           <div class="card h-100 shadow-sm border-0 bg-light">
             <img src="${p.image}" class="card-img-top img-fluid" alt="${p.title}">
@@ -22,8 +22,8 @@ fetch("./assets/data/all-projects.json")
           </div>
         </div>
       `;
-            // Modal
-            modalContainer.innerHTML += `
+      // Modal
+      modalContainer.innerHTML += `
         <div class="modal fade" id="${p.id}" tabindex="-1" aria-hidden="true"
           data-bs-backdrop="static" data-bs-keyboard="false">
           <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -50,5 +50,5 @@ fetch("./assets/data/all-projects.json")
           </div>
         </div>
       `;
-        });
     });
+  });
