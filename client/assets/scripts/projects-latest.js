@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const card = `
                 <div class="col-sm-12 col-md-4 mb-2">
                     <div class="card h-100 shadow-sm border-0 bg-light">
-                        <img src="${p.image}" class="card-img-top" alt="${p.title}">
+                        <img src="${p.image}" class="card-img-top" style="height= 200px;" alt="${p.title}">
                         <div class="card-body">
                             <h5 class="card-title text-primary-emphasis fw-semibold">
                                 ${p.title}
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             container.innerHTML += `
             <div class="col-sm-12 col-md-4 d-flex align-items-center">
-                <div class="card h-75 w-100 shadow-sm border-0 bg-light">
+                <div class="card shadow-sm border-0 bg-light w-100" style="height: 300px;">
                     <a href="./views/projects-all.html"
                         class="btn btn-outline-info pt-4 pb-4 text-primary-emphasis w-100 h-100 d-flex flex-column justify-content-center align-items-center shadow-sm border-0 bg-light"
                         style="text-decoration: none;">

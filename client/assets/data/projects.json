@@ -2,11 +2,11 @@
   {
     "id": "projectModalOne",
     "title": "LED Blinker Circuit",
-    "image": "./assets/project-demos/project1",
+    "image": "./assets/images/project-demos/project1.png",
     "desc": "Designed and implemented a Blinker circuit using TinkerCAD breadboard design and KiCAD for schematic and PCB layout.",
     "tools": "KiCAD, TinkerCAD",
     "modalTitle": "LED Blinker Circuit Details",
-    "modalImage": "./assets/images/e-project1.jpg",
+    "modalImage": "./assets/images/project-demos/project1.png",
     "modalLearn": [
       "Understanding basic LED and resistor behavior.",
       "Blinking automation using simple ICs or microcontrollers."
@@ -27,7 +27,7 @@
   {
     "id": "projectModalThree",
     "title": "Street Light Sensor System",
-    "image": "../assets/images/e-project3.jpg",
+    "image": "./assets/images/project-demos/project3.png",
     "desc": "Real-time automatic lighting based on natural light levels using sensors and microcontrollers.",
     "tools": "Arduino, KiCAD, TinkerCAD",
     "modalTitle": "Street Light Sensor System Details",
@@ -68,7 +68,7 @@
     "title": "Blog Site",
     "image": "../assets/images/e-project6.jpg",
     "desc": "Developed a fully responsive blog website with modern UI components.",
-    "tools": "HTML, CSS, Bootstrap, JavaScript",
+    "tools": "HTML5, CSS, Bootstrap 5, JavaScript",
     "modalTitle": "Blog Site Details",
     "modalImage": "../assets/images/e-project6.jpg",
     "modalLearn": ["Frontend UI design.", "Responsive grid layouting."]
@@ -77,9 +77,9 @@
   {
     "id": "projectModalSeven",
     "title": "Movie Streaming Site",
-    "image": "../assets/images/e-project7.jpg",
+    "image": "./assets/images/project-demos/project7.jpeg",
     "desc": "Built a movie streaming interface using HTML, CSS and JavaScript.",
-    "tools": "HTML, CSS, Bootstrap, JavaScript",
+    "tools": "HTML5, CSS, Bootstrap 5, JavaScript",
     "modalTitle": "Movie Streaming Site Details",
     "modalImage": "../assets/images/e-project7.jpg",
     "modalLearn": ["Media UI/UX design.", "Content arrangement and modals."]
@@ -88,9 +88,9 @@
   {
     "id": "projectModalEight",
     "title": "School Management System",
-    "image": "../assets/images/e-project8.jpg",
+    "image": "./assets/images/project-demos/project8.jpeg",
     "desc": "Developed a system to track grades, financial status, and academic progress.",
-    "tools": "HTML, CSS, Bootstrap, JavaScript",
+    "tools": "HTML5, CSS, Bootstrap 5, JavaScript",
     "modalTitle": "School Management System Details",
     "modalImage": "../assets/images/e-project8.jpg",
     "modalLearn": ["Student data structuring.", "Admin panel logic."]
@@ -100,7 +100,7 @@
     "title": "School Management System",
     "image": "../assets/images/e-project8.jpg",
     "desc": "Developed a system to track grades, financial status, and academic progress.",
-    "tools": "HTML, CSS, Bootstrap, JavaScript",
+    "tools": "HTML5, CSS, Bootstrap 5, JavaScript",
     "modalTitle": "School Management System Details",
     "modalImage": "../assets/images/e-project8.jpg",
     "modalLearn": ["Student data structuring.", "Admin panel logic."]

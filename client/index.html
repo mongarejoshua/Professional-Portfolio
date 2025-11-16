@@ -18,6 +18,7 @@
 </head>
 
 <body class="container-xxl p-0">
+
     <!-- navbar components -->
     <nav class="navbar navbar-expand-lg sticky-top shadow-sm navbar-dark bg-black">
         <div class="container">
@@ -52,12 +53,19 @@
                 </ul>
             </div>
         </div>
+
     </nav>
+
+
 
     <!-- hero section -->
     <section id="home" class="home-section text-white text-center vh-100">
         <div class="overlay vh-100"></div>
         <div class="container">
+            <div class="alert alert-danger sticky-top top-0 z-1" role="alert">
+                Kindly note that this site is still under development. Be aware of some missing functionalities and
+                content!
+            </div>
             <p class="fw-light text-center">WELCOME TO TECHWITHJOSH DIGITAL SOLUTIONS</p>
             <h1 class="fw-bolder fs-1 text-primary text-center">I'm Mongare Joshua</h1>
             <ul class="list-inline text-center text-info">
@@ -86,7 +94,8 @@
                 </div>
                 <div class="col-md-6 text-dark">
 
-                    <h2 class="fw-bold fw-bold text-warning mb-3 mt-3 ms-auto"><span class="text-primary-emphasis">|</span> ABOUT ME</h2>
+                    <h2 class="fw-bold fw-bold text-warning mb-3 mt-3 ms-auto"><span
+                            class="text-primary-emphasis">|</span> ABOUT ME</h2>
                     <p class="text-muted mb-4">
                         I'm a dynamic student and developer, building a solid foundation as a Bachelor's degree
                         candidate in Electrical and
@@ -121,7 +130,8 @@
     <!-- Projects -->
     <section id="projects" class="p-2 bg-white">
         <div class="container pb-4">
-            <h2 class="fw-bold text-warning mb-3 mt-3 me-auto"><span class="text-primary-emphasis">|</span> LATEST PROJECTS</h2>
+            <h2 class="fw-bold text-warning mb-3 mt-3 me-auto"><span class="text-primary-emphasis">|</span> LATEST
+                PROJECTS</h2>
             <p class="text-start text-muted mb-4">
                 A showcase of hands-on electrical, telecom, automation, and web-based innovations that
                 demonstrate my technical range and engineering creativity.
@@ -138,7 +148,8 @@
     <section id="services" class="service p-2 p-md-3 p-lg-5 bg-light">
         <div class="overlay"></div>
         <div class="container">
-            <h2 class="fw-bold text-warning mb-3 mt-3 me-auto"><span class="text-primary-emphasis">|</span> WHAT I OFFER</h2>
+            <h2 class="fw-bold text-warning mb-3 mt-3 me-auto"><span class="text-primary-emphasis">|</span> WHAT I OFFER
+            </h2>
             <p class="text-white text-start mb-4">
                 As an Electrical and Telecommunications Engineer, I provide a wide range of services
                 that combine innovation, technical precision, and hands-on expertise.
@@ -358,8 +369,8 @@
 
 
                     <form id="contactForm" class="container text-center" method="POST" data-netlify="true"
-                        name="contact-form">
-                        <input type="hidden" name="contact-form" value="contact">
+                        name="contact">
+                        <input type="hidden" name="form-name" value="contact">
 
                         <div class="row">
                             <label class="form-label text-start" for="name"><i
@@ -384,7 +395,7 @@
                                     class="bi bi-chat-dots-fill text-muted me-2"></i>
                                 Your Comments</label>
                             <div class="mb-3">
-                                <textarea name="subject" id="message" class="form-control" rows="5"
+                                <textarea name="message" id="message" class="form-control" rows="5"
                                     placeholder="Submit your message request" required></textarea>
                             </div>
                         </div>
@@ -398,7 +409,7 @@
                         <div class="position-fixed top-0 start-50 translate-middle-x mt-1" style="z-index: 1080;">
                             <div id="successToast" class="toast align-items-center text-bg-success border-0"
                                 role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true"
-                                data-bs-delay="6000">
+                                data-bs-delay="8000">
                                 <div class="d-flex justify-content-center">
                                     <div class="toast-body">
                                         <div class="d-flex justify-content-between align-items-center">
@@ -430,7 +441,8 @@
             <h5 class="text-uppercase mb-4 fw-bold text-primary">Contact</h5>
             <p class="small"><i class="bi bi-house-door me-2"></i> Nairobi, Kenya</p>
             <p class="small"><i class="bi bi-phone me-2"></i> +254 715 069 901</p>
-            <p class="small"><i class="bi bi-envelope me-2"></i> <a class="text-decoration-none" href="mailto:mongarejoshua254@gmail.com" target="_blank">mongarejoshua254@gmail.com</a></p>
+            <p class="small"><i class="bi bi-envelope me-2"></i> <a class="text-decoration-none"
+                    href="mailto:mongarejoshua254@gmail.com" target="_blank">mongarejoshua254@gmail.com</a></p>
             <div class="social-media-icons">
                 <a href="https://www.linkedin.com/in/mongare-joshua-30663431a/" target="_blank"
                     class="text-decoration-none social-icon-link"><i class="bi bi-linkedin"></i></a>
