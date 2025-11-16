@@ -13,7 +13,7 @@ fetch("../assets/data/projects.json")
             <div class="card-body">
               <h5 class="card-title text-primary-emphasis fw-semibold">${p.title}</h5>
               <p class="card-text text-muted">${p.desc}</p>
-              <p><strong>Tools:</strong> ${p.tools}</p>
+              <p class="text-success"><strong>Tools:</strong> ${p.tools}</p>
               <a href="#" class="btn btn-outline-primary"
                  data-bs-toggle="modal" data-bs-target="#${p.id}">
                  <i class="bi bi-eye"></i> View Project

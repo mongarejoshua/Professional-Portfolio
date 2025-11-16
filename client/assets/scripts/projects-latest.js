@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const latest = projects.slice(0, 8);
 
             const container = document.getElementById("latest-projects");
+            const modal = document.getElementById("modalContainer")
 
             latest.forEach(p => {
                 const card = `
@@ -22,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
                             <p class="card-text text-muted">
                                 ${p.desc}
                             </p>
-                            <p><strong>Tools:</strong> ${p.tools}</p>
-                            <a href="${p.link}" class="btn btn-outline-primary">
+                            <p class="text-success"><strong>Tools:</strong> ${p.tools}</p>
+                            <a href="${p.link}" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#${p.id}">
                                 <i class="bi bi-eye"></i> View Project
                             </a>
                         </div>
@@ -31,6 +32,34 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 `;
                 container.innerHTML += card;
+
+                modal.innerHTML += `
+                    <div class="modal fade" id="${p.id}" tabindex="-1" aria-hidden="true"
+                    data-bs-backdrop="static" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                        <div class="modal-header bg-info text-white">
+                            <h5 class="modal-title">${p.modalTitle}</h5>
+                        </div>
+                        <div class="modal-body">
+                            <h6 class="text-info">Project Screenshot</h6>
+            
+                            <img src="${p.modalImage}" class="img-fluid rounded shadow-sm mb-3" alt="${p.title}">
+            
+                            <h6 class="text-info mt-3">Key Learnings</h6>
+                            <ul class="list-unstyled">
+                            ${p.modalLearn.map(i => `
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> ${i}</li>
+                            `).join("")}
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                `;
 
             })
 
