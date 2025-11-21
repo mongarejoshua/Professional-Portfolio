@@ -5,11 +5,15 @@ fetch("../assets/data/projects.json")
     const modalContainer = document.getElementById("modalContainer");
 
     projects.forEach(p => {
+      // Fix image paths for views folder (convert ./assets/ to ../assets/)
+      const imagePath = p.image.replace(/^\.\//, "../");
+      const modalImagePath = p.modalImage.replace(/^\.\//, "../");
+      
       // Project Card
       container.innerHTML += `
         <div class="col-sm-12 col-md-4">
           <div class="card h-100 shadow-sm border-0 bg-light">
-            <img src="${p.image}" class="card-img-top img-fluid" alt="${p.title}">
+            <img src="${imagePath}" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;" alt="${p.title}">
             <div class="card-body">
               <h5 class="card-title text-primary-emphasis fw-semibold">${p.title}</h5>
               <p class="card-text text-muted">${p.desc}</p>
@@ -34,7 +38,7 @@ fetch("../assets/data/projects.json")
               <div class="modal-body">
                 <h6 class="text-info">Project Screenshot</h6>
   
-                <img src="${p.modalImage}" class="img-fluid rounded shadow-sm mb-3" alt="${p.title}">
+                <img src="${modalImagePath}" class="img-fluid rounded shadow-sm mb-3" alt="${p.title}">
   
                 <h6 class="text-info mt-3">Key Learnings</h6>
                 <ul class="list-unstyled">
@@ -51,4 +55,5 @@ fetch("../assets/data/projects.json")
         </div>
       `;
     });
-  });
+  })
+  .catch(error => console.error("Error loading projects:", error));

@@ -28,6 +28,9 @@ body {
 nav, footer, h2 {
     font-family: "Fira Sans";
 }
+.navbar-brand {
+    font-family: "Alan Sans";
+}
 
 .navbar-nav .nav-link:hover {
     color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;

@@ -1,21 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById("latest-projects");
+    const modal = document.getElementById("modalContainer");
+    
+    if (!container || !modal) {
+        console.error("Required containers not found");
+        return;
+    }
+
     fetch("./assets/data/projects.json")
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            return response.json();
+        })
         .then(projects => {
             // Sort by date (newest first)
             projects.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-            // Pick the latest 6
+            // Pick the latest 8
             const latest = projects.slice(0, 8);
-
-            const container = document.getElementById("latest-projects");
-            const modal = document.getElementById("modalContainer")
 
             latest.forEach(p => {
                 const card = `
                 <div class="col-sm-12 col-md-4 mb-2">
                     <div class="card h-100 shadow-sm border-0 bg-light">
-                        <img src="${p.image}" class="card-img-top" style="height= 200px;" alt="${p.title}">
+                        <img src="${p.image}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="${p.title}">
                         <div class="card-body">
                             <h5 class="card-title text-primary-emphasis fw-semibold">
                                 ${p.title}

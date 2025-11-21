@@ -1,4 +1,8 @@
-document.getElementById("contactForm").addEventListener("submit", async function (e) {
+document.addEventListener("DOMContentLoaded", () => {
+    const contactForm = document.getElementById("contactForm");
+    if (!contactForm) return;
+
+    contactForm.addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const form = e.target;
@@ -41,4 +45,5 @@ document.getElementById("contactForm").addEventListener("submit", async function
         sendBtn.disabled = false;
         sendBtn.innerHTML = `<i class="bi bi-send-fill me-2"></i>Send Message`;
     }
+    });
 });

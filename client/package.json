@@ -1,4 +1,20 @@
 {
+  "name": "professional-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Mongare Joshua - Electrical & Telecommunications Engineer",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "electrical-engineering",
+    "telecommunications",
+    "web-development"
+  ],
+  "author": "Mongare Joshua",
+  "license": "MIT",
   "dependencies": {
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1"
