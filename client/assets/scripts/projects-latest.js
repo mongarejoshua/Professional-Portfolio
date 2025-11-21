@@ -49,10 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="modal-header bg-info text-white">
                             <h5 class="modal-title">${p.modalTitle}</h5>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body text-center">
                             <h6 class="text-info">Project Screenshot</h6>
             
-                            <img src="${p.modalImage}" class="img-fluid rounded shadow-sm mb-3" alt="${p.title}">
+                            <img src="${p.modalImage1}" class="img-fluid rounded shadow-sm mb-3" alt="${p.title}">
+                            <img src="${p.modalImage2}" class="img-fluid rounded shadow-sm mb-3" alt="${p.title}">
             
                             <h6 class="text-info mt-3">Key Learnings</h6>
                             <ul class="list-unstyled">
@@ -86,4 +87,4 @@ document.addEventListener("DOMContentLoaded", () => {
         `
         })
         .catch(error => console.error("Error loading projects:", error));
-});
+});

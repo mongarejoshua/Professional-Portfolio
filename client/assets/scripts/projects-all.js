@@ -7,7 +7,8 @@ fetch("../assets/data/projects.json")
     projects.forEach(p => {
       // Fix image paths for views folder (convert ./assets/ to ../assets/)
       const imagePath = p.image.replace(/^\.\//, "../");
-      const modalImagePath = p.modalImage.replace(/^\.\//, "../");
+      const modalImagePath1 = p.modalImage1.replace(/^\.\//, "../");
+      const modalImagePath2 = p.modalImage2.replace(/^\.\//, "../");
       
       // Project Card
       container.innerHTML += `
@@ -35,10 +36,11 @@ fetch("../assets/data/projects.json")
               <div class="modal-header bg-info text-white">
                 <h5 class="modal-title">${p.modalTitle}</h5>
               </div>
-              <div class="modal-body">
+              <div class="modal-body text-center">
                 <h6 class="text-info">Project Screenshot</h6>
   
-                <img src="${modalImagePath}" class="img-fluid rounded shadow-sm mb-3" alt="${p.title}">
+                <img src="${modalImagePath1}" class="img-fluid rounded shadow-sm mb-3" alt="${p.title}">
+                <img src="${modalImagePath2}" class="img-fluid rounded shadow-sm mb-3" alt="${p.title}">
   
                 <h6 class="text-info mt-3">Key Learnings</h6>
                 <ul class="list-unstyled">

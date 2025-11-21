@@ -43,7 +43,8 @@ nav, footer, h2 {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    padding-top: 75px;
+    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .home-section .overlay {
