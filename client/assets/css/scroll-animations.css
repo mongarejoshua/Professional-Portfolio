@@ -1,0 +1,52 @@
+/* Fade In Up Animation Styles */
+
+/* Initial state - elements are hidden and translated down */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Active state - elements are visible and in position */
+.fade-in-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optional: Stagger delay for child elements */
+.fade-in-up.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.fade-in-up.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.fade-in-up.delay-3 {
+    transition-delay: 0.3s;
+}
+
+.fade-in-up.delay-4 {
+    transition-delay: 0.4s;
+}
+
+/* Ensure sections and content elements can be animated */
+section,
+section > *,
+section .container,
+section .container > *,
+section .row,
+section .row > *,
+.card,
+.card-body,
+img,
+h1, h2, h3, h4, h5, h6,
+p,
+ul, li,
+button,
+.btn,
+form,
+.alert {
+    will-change: opacity, transform;
+}
+
