@@ -1,109 +1,210 @@
 [
   {
-    "id": "projectModalOne",
+    "id": "project-01",
     "title": "LED Blinker Circuit",
-    "image": "./assets/images/project-demos/project1a.png",
-    "desc": "A simple electronic circuit that uses LEDs and a timing mechanism to create a repeating blink pattern.",
-    "tools": "KiCAD, TinkerCAD",
+    "category": "Electronics",
+    "difficulty": "Beginner",
+    "tags": ["LED", "Timer Circuit", "Basic Electronics", "KiCAD", "TinkerCAD"],
+
+    "image": "./public/images/project-demos/project1a.png",
+    "desc": "A timing-based LED circuit that turns LEDs ON and OFF using resistors, capacitors, and a switching element such as a 555 timer.",
+    "tools": "TinkerCAD, KiCAD",
     "date": "2024-12-15",
-    "link": "#",
-    "modalTitle": "LED Blinker Circuit Details",
-    "modalImage1": "./assets/images/project-demos/project1b.png",
-    "modalImage2": "./assets/images/project-demos/project1a.png",
+
+    "modalTitle": "LED Blinker Circuit",
+    "modalImage1": "./public/images/project-demos/project1b.png",
+    "modalImage2": "./public/images/project-demos/project1a.png",
     "modalLearn": [
-      "Understanding basic LED and resistor behavior.",
-      "Blinking automation using simple ICs or microcontrollers."
+      "Building RC timing circuits and LED drivers.",
+      "Understanding how 555 timer output cycles operate.",
+      "Simulating the blink behavior in TinkerCAD and designing PCB traces in KiCAD."
     ]
   },
+
   {
-    "id": "projectModalTwo",
+    "id": "project-02",
     "title": "Power Bank Circuit",
-    "image": "./assets/images/project-demos/project2b.png",
-    "desc": "A portable power system that stores energy in rechargeable batteries and delivers regulated 5V output for charging devices.",
-    "tools": "KiCAD, TinkerCAD",
+    "category": "Power Electronics",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Battery",
+      "Boost Converter",
+      "Charging Circuit",
+      "Regulation",
+      "KiCAD"
+    ],
+
+    "image": "./public/images/project-demos/project2b.png",
+    "desc": "A rechargeable power system that uses a Li-ion battery and a boost converter to supply a stable 5V USB output.",
+    "tools": "TinkerCAD, KiCAD",
     "date": "2024-11-20",
-    "link": "#",
-    "modalTitle": "Motion Detector Alarm Details",
-    "modalImage1": "./assets/images/project-demos/project2a.png",
-    "modalImage2": "./assets/images/project-demos/project2b.png",
-    "modalLearn": ["PIR sensor integration.", "Alarm triggering mechanisms."]
+
+    "modalTitle": "Power Bank Circuit",
+    "modalImage1": "./public/images/project-demos/project2a.png",
+    "modalImage2": "./public/images/project-demos/project2b.png",
+    "modalLearn": [
+      "How boost converters increase voltage from 3.7V to 5V.",
+      "Battery management, charging, and protection principles.",
+      "Designing and routing power circuits in KiCAD."
+    ]
   },
+
   {
-    "id": "projectModalThree",
+    "id": "project-03",
     "title": "Street Light Sensor System",
-    "image": "./assets/images/project-demos/project3.png",
-    "desc": "An automated lighting setup that switches lights on or off based on time of the day, enabling hands-free illumination control.",
-    "tools": "Arduino, KiCAD, TinkerCAD",
+    "category": "Automation",
+    "difficulty": "Beginner",
+    "tags": ["LDR", "Automatic Lighting", "Sensors", "Low Power"],
+
+    "image": "./public/images/project-demos/Street Light Sensor.png",
+    "desc": "An automatic lighting system that uses an LDR to detect ambient light level and control street lights without manual switching.",
+    "tools": "TinkerCAD, KiCAD",
     "date": "2024-10-10",
-    "link": "#",
-    "modalTitle": "Street Light Sensor System Details",
-    "modalImage": "./assets/images/project-demos/project3.png",
+
+    "modalTitle": "Street Light Sensor System",
+    "modalImage1": "./public/images/project-demos/Street Light Sensor.png",
+    "modalImage2": "./public/images/project-demos/Street Light Sensor.png",
     "modalLearn": [
-      "Light-dependent resistor (LDR) usage.",
-      "Power-efficient automation."
+      "How LDR resistance changes with varying light levels.",
+      "Comparator or microcontroller-based switching.",
+      "Simulating sensing logic and creating PCB schematics."
     ]
   },
+
   {
-    "id": "projectModalFour",
+    "id": "project-04",
     "title": "Motion Detector Circuit",
-    "image": "./assets/images/project-demos/project1.png",
-    "desc": "An electronic system that uses a motion sensor (such as PIR or IR modules) to detect movement and activate an output signal",
-    "tools": "Cisco Packet Tracer, GNS3",
+    "category": "Security Systems",
+    "difficulty": "Intermediate",
+    "tags": ["PIR Sensor", "IR Detection", "Security", "Alarms"],
+
+    "image": "./public/images/project-demos/Motion Detector Alarm ARDUINO-UNO-R3.png",
+    "desc": "A motion-sensing circuit that uses PIR or IR sensors to detect movement and trigger an alarm or lighting output.",
+    "tools": "TinkerCAD, KiCAD",
     "date": "2024-09-05",
-    "link": "#",
-    "modalTitle": "LAN & Network Design Details",
-    "modalImage": "./assets/images/project-demos/project1.png",
+
+    "modalTitle": "Motion Detector Circuit",
+    "modalImage1": "./public/images/project-demos/Motion Detector Alarm ARDUINO-UNO-R3.png",
+    "modalImage2": "./public/images/project-demos/Motion Detector Alarm ARDUINO-UNO-R3.png",
     "modalLearn": [
-      "Subnetting and network segmentation.",
-      "Router and switch configurations."
+      "Understanding PIR sensor detection mechanisms.",
+      "Triggering alarms using digital sensor outputs.",
+      "Designing and routing sensor modules in KiCAD."
     ]
   },
+
   {
-    "id": "projectModalFive",
-    "title": "Microstrip Antenna Design",
-    "image": "./assets/images/project-demos/project1.png",
-    "desc": "Simulated a patch antenna for 2.4GHz to improve radiation efficiency.",
-    "tools": "CST Studio, HFSS",
+    "id": "project-05",
+    "title": "Energy Consumption Monitor",
+    "category": "Measurement Systems",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Power Measurement",
+      "Sensors",
+      "Current Sensing",
+      "Energy Monitoring"
+    ],
+
+    "image": "./public/images/project-demos/Energy Consumption Monitor.png",
+    "desc": "A system that measures voltage, current, and power to calculate total energy consumption in real-time.",
+    "tools": "TinkerCAD, KiCAD",
     "date": "2024-08-15",
-    "link": "#",
-    "modalTitle": "Microstrip Antenna Design Details",
-    "modalImage": "./assets/images/project-demos/project1.png",
-    "modalLearn": ["PCB antenna design.", "Frequency tuning and simulation."]
+
+    "modalTitle": "Energy Consumption Monitor",
+    "modalImage1": "./public/images/project-demos/Energy Consumption Monitor.png",
+    "modalImage2": "./public/images/project-demos/Energy Consumption Monitor.png",
+    "modalLearn": [
+      "How current sensors like ACS712 measure load current.",
+      "Computing energy usage (Wh) from voltage and current.",
+      "PCB layout for sensing circuits with noise reduction."
+    ]
   },
+
   {
-    "id": "projectModalSix",
-    "title": "Blog Site",
-    "image": "./assets/images/project-demos/project1.png",
-    "desc": "Developed a fully responsive blog website with modern UI components.",
-    "tools": "HTML5, CSS, Bootstrap 5, JavaScript",
+    "id": "project-06",
+    "title": "Fire Detection Alarm",
+    "category": "Safety Systems",
+    "difficulty": "Beginner",
+    "tags": ["Smoke Sensors", "Heat Detection", "Alarm Systems"],
+
+    "image": "./public/images/project-demos/Fire Detection Alarm.png",
+    "desc": "A fire safety circuit that detects smoke or heat levels using sensors and triggers alarms automatically.",
+    "tools": "TinkerCAD, KiCAD",
     "date": "2024-07-20",
-    "link": "#",
-    "modalTitle": "Blog Site Details",
-    "modalImage": "./assets/images/project-demos/project1.png",
-    "modalLearn": ["Frontend UI design.", "Responsive grid layouting."]
+
+    "modalTitle": "Fire Detection Alarm",
+    "modalImage1": "./public/images/project-demos/Fire Detection Alarm.png",
+    "modalImage2": "./public/images/project-demos/Fire Detection Alarm.png",
+    "modalLearn": [
+      "Reading sensor thresholds for smoke and heat.",
+      "Designing automatic buzzer trigger logic.",
+      "Testing alarm systems and drawing PCB layouts."
+    ]
   },
+
   {
-    "id": "projectModalSeven",
-    "title": "Movie Streaming Site",
-    "image": "./assets/images/project-demos/project7.jpeg",
-    "desc": "Built a movie streaming interface using HTML, CSS and JavaScript.",
-    "tools": "HTML5, CSS, Bootstrap 5, JavaScript",
+    "id": "project-07",
+    "title": "Traffic Light Controller",
+    "category": "Automation",
+    "difficulty": "Beginner",
+    "tags": ["Timing Circuits", "LED Control", "Traffic Logic"],
+
+    "image": "./public/images/project-demos/Traffic Light Controller.png",
+    "desc": "A signal control system that cycles through RED, GREEN, and YELLOW lights based on timing logic.",
+    "tools": "TinkerCAD, KiCAD",
     "date": "2024-06-10",
-    "link": "#",
-    "modalTitle": "Movie Streaming Site Details",
-    "modalImage": "./assets/images/project-demos/project7.jpeg",
-    "modalLearn": ["Media UI/UX design.", "Content arrangement and modals."]
+
+    "modalTitle": "Traffic Light Controller",
+    "modalImage1": "./public/images/project-demos/Traffic Light Controller.png",
+    "modalImage2": "./public/images/project-demos/Traffic Light Controller.png",
+    "modalLearn": [
+      "Creating timing sequences for LED switching.",
+      "Implementing real traffic control algorithms.",
+      "Simulating the light cycle logic and designing PCBs."
+    ]
   },
+
   {
-    "id": "projectModalEight",
-    "title": "School Management System",
-    "image": "./assets/images/project-demos/project8.jpeg",
-    "desc": "Developed a system to track grades, financial status, and academic progress.",
-    "tools": "HTML5, CSS, Bootstrap 5, JavaScript",
+    "id": "project-08",
+    "title": "Transformer Monitoring System",
+    "category": "Power Systems",
+    "difficulty": "Advanced",
+    "tags": ["Transformers", "Thermal Monitoring", "Sensors", "Power Systems"],
+
+    "image": "./public/images/project-demos/Transformer Monitoring System.png",
+    "desc": "A monitoring setup that tracks transformer temperature, load current, and critical operating conditions to prevent failures.",
+    "tools": "TinkerCAD, KiCAD",
     "date": "2024-05-25",
-    "link": "#",
-    "modalTitle": "School Management System Details",
-    "modalImage": "./assets/images/project-demos/project8.jpeg",
-    "modalLearn": ["Student data structuring.", "Admin panel logic."]
+
+    "modalTitle": "Transformer Monitoring System",
+    "modalImage1": "./public/images/project-demos/Transformer Monitoring System.png",
+    "modalImage2": "./public/images/project-demos/Transformer Monitoring System.png",
+    "modalLearn": [
+      "How thermistors and digital temperature sensors work.",
+      "Current sensing and overload detection.",
+      "Designing transformer protection circuits and dashboards."
+    ]
+  },
+
+  {
+    "id": "project-09",
+    "title": "Transformer Monitoring System",
+    "category": "Power Systems",
+    "difficulty": "Advanced",
+    "tags": ["Transformers", "Thermal Monitoring", "Sensors", "Power Systems"],
+
+    "image": "./public/images/project-demos/Transformer Monitoring System.png",
+    "desc": "A monitoring setup that tracks transformer temperature, load current, and critical operating conditions to prevent failures.",
+    "tools": "TinkerCAD, KiCAD",
+    "date": "2024-05-25",
+
+    "modalTitle": "Transformer Monitoring System",
+    "modalImage1": "./public/images/project-demos/Transformer Monitoring System.png",
+    "modalImage2": "./public/images/project-demos/Transformer Monitoring System.png",
+    "modalLearn": [
+      "How thermistors and digital temperature sensors work.",
+      "Current sensing and overload detection.",
+      "Designing transformer protection circuits and dashboards."
+    ]
   }
 ]

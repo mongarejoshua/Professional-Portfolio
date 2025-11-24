@@ -9,7 +9,7 @@ fetch("../assets/data/projects.json")
       const imagePath = p.image.replace(/^\.\//, "../");
       const modalImagePath1 = p.modalImage1.replace(/^\.\//, "../");
       const modalImagePath2 = p.modalImage2.replace(/^\.\//, "../");
-      
+
       // Project Card
       container.innerHTML += `
         <div class="col-sm-12 col-md-4">
@@ -33,24 +33,24 @@ fetch("../assets/data/projects.json")
           data-bs-backdrop="static" data-bs-keyboard="false">
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-              <div class="modal-header bg-info text-white">
+              <div class="modal-header bg-primary text-white text-start">
                 <h5 class="modal-title">${p.modalTitle}</h5>
               </div>
               <div class="modal-body text-center">
-                <h6 class="text-info">Project Screenshot</h6>
+                <h6 class="text-dark">Project screenshots & demos</h6>
   
                 <img src="${modalImagePath1}" class="img-fluid rounded shadow-sm mb-3" alt="${p.title}">
                 <img src="${modalImagePath2}" class="img-fluid rounded shadow-sm mb-3" alt="${p.title}">
   
-                <h6 class="text-info mt-3">Key Learnings</h6>
-                <ul class="list-unstyled">
+                <h6 class="text-dark mt-3 text-start">Key Learnings</h6>
+                <ul class="list-unstyled text-start">
                   ${p.modalLearn.map(i => `
                     <li><i class="bi bi-check-circle-fill text-success me-2"></i> ${i}</li>
                   `).join("")}
                 </ul>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>

@@ -21,41 +21,7 @@
 
 <body class="container-xxl p-0">
     <!-- navbar components -->
-    <!-- navbar components -->
-    <nav class="navbar navbar-expand-lg position-fixed fixed-top shadow-sm navbar-dark bg-black">
-        <div class="container">
-            <a class="navbar-brand fw-bold fs-4 text-primary" href="#home">
-                <i class="bi bi-code-slash me-2 text-warning"></i>TECHWITHJOSH
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <!-- Added text-white to nav-links for fixed-top dark background and icons for aesthetics -->
-                    <li class="nav-item"><a class="nav-link text-white" href="#home"><i
-                                class="bi bi-house-door-fill me-1 text-warning"></i>HOME</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#about"><i
-                                class="bi bi-person-fill me-1 text-warning"></i>ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#projects"><i
-                                class="bi bi-kanban-fill me-1 text-warning"></i>PROJECTS</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="https://github.com/mongarejoshua?tab=repositories"
-                            target="_blank">
-                            <i class="bi bi-github me-1 text-warning"></i>GITHUB
-                        </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#services"><i
-                                class="bi bi-cpu-fill me-1 text-warning"></i>SERVICES</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#blog"><i
-                                class="bi bi-book-fill me-1 text-warning"></i>BLOG</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#contact"><i
-                                class="bi bi-chat-dots-fill me-1 text-warning"></i>CONTACT</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="header" class="fixed-top"></div>
 
     <!-- hero section -->
     <section id="home" class="home-section text-white text-center vh-100">
@@ -85,7 +51,7 @@
         <div class="container">
             <div class="row align-items-center p-2 shadow-lg">
                 <div class="col-md-6 text-center">
-                    <img src="./assets/images/about.jpeg" class="img-fluid shadow-lg rounded-1" alt="profile">
+                    <img src="./public/images/about.jpeg" class="img-fluid shadow-lg rounded-1" alt="profile">
                 </div>
                 <div class="col-md-6 text-dark">
 
@@ -414,10 +380,10 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-    <script src="./assets/scripts/navbar.js"></script>
-    <script src="./assets/scripts/navbar-menu.js"></script>
-    <script src="./assets/scripts/hero.js"></script>
+
+
     <script src="./assets/scripts/projects-latest.js"></script>
+    <script src="./assets/scripts/hero.js"></script>
     <script src="./assets/scripts/contact.js"></script>
     <script src="./assets/scripts/load-header-footer.js"></script>
     <script src="./assets/scripts/scroll-animations.js"></script>

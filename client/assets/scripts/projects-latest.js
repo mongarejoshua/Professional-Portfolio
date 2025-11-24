@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("latest-projects");
     const modal = document.getElementById("modalContainer");
-    
+
     if (!container || !modal) {
         console.error("Required containers not found");
         return;
@@ -46,24 +46,24 @@ document.addEventListener("DOMContentLoaded", () => {
                     data-bs-backdrop="static" data-bs-keyboard="false">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content">
-                        <div class="modal-header bg-info text-white">
+                        <div class="modal-header bg-primary text-white text-start">
                             <h5 class="modal-title">${p.modalTitle}</h5>
                         </div>
                         <div class="modal-body text-center">
-                            <h6 class="text-info">Project Screenshot</h6>
+                            <h6 class="text-dark">Project screenshots & demos</h6>
             
                             <img src="${p.modalImage1}" class="img-fluid rounded shadow-sm mb-3" alt="${p.title}">
                             <img src="${p.modalImage2}" class="img-fluid rounded shadow-sm mb-3" alt="${p.title}">
             
-                            <h6 class="text-info mt-3">Key Learnings</h6>
-                            <ul class="list-unstyled">
+                            <h6 class="text-dark mt-3 text-start">Key Learnings</h6>
+                            <ul class="list-unstyled text-start">
                             ${p.modalLearn.map(i => `
                                 <li><i class="bi bi-check-circle-fill text-success me-2"></i> ${i}</li>
                             `).join("")}
                             </ul>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                            <button class="btn btn-primary" data-bs-dismiss="modal">Close</button>
                         </div>
                         </div>
                     </div>
@@ -87,4 +87,4 @@ document.addEventListener("DOMContentLoaded", () => {
         `
         })
         .catch(error => console.error("Error loading projects:", error));
-});
+});

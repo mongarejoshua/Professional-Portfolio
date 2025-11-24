@@ -38,7 +38,7 @@ nav, footer, h2 {
 
 .home-section {
     position: relative;
-    background: url('../images/hero-bg.jpg');
+    background: url('../../public/images/hero-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,7 +63,7 @@ nav, footer, h2 {
 
 .service {
     position: relative;
-    background: url('../images/service-bg.jpg') center/cover no-repeat;
+    background: url('../../public/images/service-bg.jpg') center/cover no-repeat;
     color: white;
 }
 
