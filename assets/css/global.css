@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Alan Sans */
 @font-face {
     font-family: 'Alan Sans';
@@ -25,12 +26,16 @@ body {
     font-family: "Alan Sans";
 }
 
-nav, footer, h2 {
+nav,
+footer,
+h2 {
     font-family: "Fira Sans";
 }
+
 .navbar-brand {
     font-family: "Alan Sans";
 }
+
 .text-uppercase {
     font-family: "Alan Sans";
 }
@@ -41,7 +46,7 @@ nav, footer, h2 {
 
 .home-section {
     position: relative;
-    background: url('../../public/images/hero-bg.jpg');
+    background: url('../../public/images/hero-bg.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
