@@ -108,7 +108,6 @@
         transform: translateX(0);
     }
 }
-
 /* On larger screens, keep default Bootstrap behavior */
 @media (min-width: 992px) {
     .navbar-collapse {
